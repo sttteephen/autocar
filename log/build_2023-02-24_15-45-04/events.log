@@ -1,0 +1,380 @@
+[0.000000] (-) TimerEvent: {}
+[0.000647] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.001340] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.001619] (turtlesim) JobQueued: {'identifier': 'turtlesim', 'dependencies': OrderedDict()}
+[0.001675] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.023306] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.042043] (turtlesim) JobStarted: {'identifier': 'turtlesim'}
+[0.092348] (-) TimerEvent: {}
+[0.192940] (-) TimerEvent: {}
+[0.293505] (-) TimerEvent: {}
+[0.393813] (-) TimerEvent: {}
+[0.494697] (-) TimerEvent: {}
+[0.595223] (-) TimerEvent: {}
+[0.613491] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'cmake'}
+[0.615544] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'build'}
+[0.623988] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vboxuser/autocar/build/turtlesim', '--', '-j8', '-l8'], 'cwd': '/home/vboxuser/autocar/build/turtlesim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('SSH_AGENT_PID', '1714'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser/autocar/src/py_pubsub/py_pubsub'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1502'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:42109'), ('EUFS_MASTER', '/home/vboxuser/sim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/sim:@/tmp/.ICE-unix/1784,unix/sim:/tmp/.ICE-unix/1784'), ('INVOCATION_ID', 'e54b4e7d4c5e48969a941c53e54fd3ea'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71a7e12a_d06d_49ce_91b2_7ab9c54791d4'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.142'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/autocar/build/turtlesim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.695415] (-) TimerEvent: {}
+[0.742787] (turtlesim) StdoutLine: {'line': b'[  1%] Built target turtlesim__cpp\n'}
+[0.746441] (turtlesim) StdoutLine: {'line': b'[ 11%] Built target turtlesim__rosidl_generator_c\n'}
+[0.783064] (turtlesim) StdoutLine: {'line': b'[ 22%] Built target turtlesim__rosidl_typesupport_introspection_cpp\n'}
+[0.786971] (turtlesim) StdoutLine: {'line': b'[ 31%] Built target turtlesim__rosidl_typesupport_cpp\n'}
+[0.797502] (-) TimerEvent: {}
+[0.801798] (turtlesim) StdoutLine: {'line': b'[ 41%] Built target turtlesim__rosidl_typesupport_fastrtps_cpp\n'}
+[0.802050] (turtlesim) StdoutLine: {'line': b'[ 51%] Built target turtlesim__rosidl_typesupport_introspection_c\n'}
+[0.802759] (turtlesim) StdoutLine: {'line': b'[ 61%] Built target turtlesim__rosidl_typesupport_c\n'}
+[0.837642] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim__rosidl_typesupport_fastrtps_c\n'}
+[0.870020] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim\n'}
+[0.897786] (-) TimerEvent: {}
+[0.914590] (turtlesim) StdoutLine: {'line': b'[ 73%] Built target draw_square\n'}
+[0.922725] (turtlesim) StdoutLine: {'line': b'[ 74%] Built target turtlesim__py\n'}
+[0.930035] (turtlesim) StdoutLine: {'line': b'[ 76%] Built target mimic\n'}
+[0.937173] (turtlesim) StdoutLine: {'line': b'[ 78%] Built target turtle_teleop_key\n'}
+[0.960957] (turtlesim) StdoutLine: {'line': b'[ 84%] Built target turtlesim_node\n'}
+[0.967979] (turtlesim) StdoutLine: {'line': b'[ 93%] Built target turtlesim__python\n'}
+[0.995516] (turtlesim) StdoutLine: {'line': b'[ 97%] Built target turtlesim__rosidl_typesupport_introspection_c__pyext\n'}
+[0.995665] (turtlesim) StdoutLine: {'line': b'[ 97%] Built target turtlesim__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.998195] (-) TimerEvent: {}
+[1.001778] (turtlesim) StdoutLine: {'line': b'[100%] Built target turtlesim__rosidl_typesupport_c__pyext\n'}
+[1.023318] (turtlesim) CommandEnded: {'returncode': 0}
+[1.098418] (-) TimerEvent: {}
+[1.115371] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/vboxuser/autocar/build/py_pubsub/build', 'install', '--record', '/home/vboxuser/autocar/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/vboxuser/autocar/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'vboxuser', 'SSH_AGENT_PID': '1714', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/vboxuser', 'OLDPWD': '/home/vboxuser/autocar/src/py_pubsub/py_pubsub', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1502', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'vboxuser', 'JOURNAL_STREAM': '8:42109', 'EUFS_MASTER': '/home/vboxuser/sim', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vboxuser', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/sim:@/tmp/.ICE-unix/1784,unix/sim:/tmp/.ICE-unix/1784', 'INVOCATION_ID': 'e54b4e7d4c5e48969a941c53e54fd3ea', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/71a7e12a_d06d_49ce_91b2_7ab9c54791d4', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.142', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vboxuser/autocar/build/py_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vboxuser/autocar/build/py_pubsub/prefix_override:/home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[1.163392] (my_package) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/my_package', 'build', '--build-base', '/home/vboxuser/autocar/build/my_package/build', 'install', '--record', '/home/vboxuser/autocar/build/my_package/install.log', '--single-version-externally-managed'], 'cwd': '/home/vboxuser/autocar/src/my_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'vboxuser', 'SSH_AGENT_PID': '1714', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/vboxuser', 'OLDPWD': '/home/vboxuser/autocar/src/py_pubsub/py_pubsub', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1502', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'vboxuser', 'JOURNAL_STREAM': '8:42109', 'EUFS_MASTER': '/home/vboxuser/sim', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vboxuser', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/sim:@/tmp/.ICE-unix/1784,unix/sim:/tmp/.ICE-unix/1784', 'INVOCATION_ID': 'e54b4e7d4c5e48969a941c53e54fd3ea', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/71a7e12a_d06d_49ce_91b2_7ab9c54791d4', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.142', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vboxuser/autocar/build/my_package', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vboxuser/autocar/build/my_package/prefix_override:/home/vboxuser/autocar/install/my_package/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[1.199138] (-) TimerEvent: {}
+[1.251242] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'install'}
+[1.281312] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vboxuser/autocar/build/turtlesim'], 'cwd': '/home/vboxuser/autocar/build/turtlesim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('SSH_AGENT_PID', '1714'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser/autocar/src/py_pubsub/py_pubsub'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1502'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:42109'), ('EUFS_MASTER', '/home/vboxuser/sim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/sim:@/tmp/.ICE-unix/1784,unix/sim:/tmp/.ICE-unix/1784'), ('INVOCATION_ID', 'e54b4e7d4c5e48969a941c53e54fd3ea'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/71a7e12a_d06d_49ce_91b2_7ab9c54791d4'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.142'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/autocar/build/turtlesim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[1.294416] (turtlesim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.294678] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/ament_index/resource_index/rosidl_interfaces/turtlesim\n'}
+[1.301293] (-) TimerEvent: {}
+[1.302784] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim\n'}
+[1.303107] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv\n'}
+[1.303289] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.303447] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__functions.h\n'}
+[1.303621] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__struct.h\n'}
+[1.303768] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__functions.c\n'}
+[1.303907] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.h\n'}
+[1.304027] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.h\n'}
+[1.304103] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.h\n'}
+[1.304190] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__functions.c\n'}
+[1.304267] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__functions.h\n'}
+[1.304344] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__struct.h\n'}
+[1.304502] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.h\n'}
+[1.304570] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__functions.c\n'}
+[1.304620] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__struct.h\n'}
+[1.304676] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__functions.h\n'}
+[1.304729] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__struct.h\n'}
+[1.304780] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__functions.h\n'}
+[1.306473] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__functions.c\n'}
+[1.306608] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__struct.h\n'}
+[1.306695] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.h\n'}
+[1.306785] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__functions.c\n'}
+[1.306892] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__functions.h\n'}
+[1.306993] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/teleport_absolute.h\n'}
+[1.307053] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/set_pen.h\n'}
+[1.307106] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/teleport_relative.h\n'}
+[1.307161] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/kill.h\n'}
+[1.307215] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/spawn.h\n'}
+[1.307269] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg\n'}
+[1.307319] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.307380] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__struct.h\n'}
+[1.307441] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__functions.h\n'}
+[1.307497] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__struct.h\n'}
+[1.307547] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__functions.c\n'}
+[1.307877] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__functions.h\n'}
+[1.308207] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.h\n'}
+[1.308338] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__functions.c\n'}
+[1.308395] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__type_support.h\n'}
+[1.308457] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/color.h\n'}
+[1.308720] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.310199] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/pose.h\n'}
+[1.310292] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action\n'}
+[1.310371] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.310447] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.h\n'}
+[1.310521] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__struct.h\n'}
+[1.310594] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__functions.h\n'}
+[1.310667] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__functions.c\n'}
+[1.310739] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/rotate_absolute.h\n'}
+[1.310821] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/environment/library_path.sh\n'}
+[1.310897] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/environment/library_path.dsv\n'}
+[1.310971] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/libturtlesim__rosidl_generator_c.so\n'}
+[1.311042] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim\n'}
+[1.311114] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv\n'}
+[1.311194] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.311273] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_c.h\n'}
+[1.311351] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_c.h\n'}
+[1.311432] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_c.h\n'}
+[1.311515] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_c.h\n'}
+[1.311599] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[1.311675] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg\n'}
+[1.311748] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.311824] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_c.h\n'}
+[1.311901] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_c.h\n'}
+[1.311976] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.312054] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action\n'}
+[1.312129] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.312201] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[1.312272] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_c.so\n'}
+[1.312347] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim\n'}
+[1.312435] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv\n'}
+[1.312528] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.313916] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.314064] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/dds_fastrtps\n'}
+[1.315636] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.316987] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.317111] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.317211] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.317360] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg\n'}
+[1.318320] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.318504] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/dds_fastrtps\n'}
+[1.318672] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.318819] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.319120] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.319226] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action\n'}
+[1.319317] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.319424] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/dds_fastrtps\n'}
+[1.319484] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.319536] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.319588] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim\n'}
+[1.319639] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv\n'}
+[1.319690] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.319741] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_c.h\n'}
+[1.319792] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.c\n'}
+[1.319842] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.c\n'}
+[1.319896] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_c.h\n'}
+[1.319948] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.c\n'}
+[1.319999] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_c.h\n'}
+[1.320049] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.c\n'}
+[1.320098] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_c.h\n'}
+[1.320147] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.c\n'}
+[1.320197] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_c.h\n'}
+[1.320247] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg\n'}
+[1.320296] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.320345] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__type_support.c\n'}
+[1.320395] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_c.h\n'}
+[1.320444] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_introspection_c.h\n'}
+[1.320494] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.c\n'}
+[1.320550] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.320603] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action\n'}
+[1.320652] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.320701] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_c.h\n'}
+[1.320750] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.c\n'}
+[1.320801] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_c.so\n'}
+[1.320851] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/libturtlesim__rosidl_typesupport_c.so\n'}
+[1.320901] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim\n'}
+[1.320950] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv\n'}
+[1.321000] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/teleport_relative.hpp\n'}
+[1.321050] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.321099] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__builder.hpp\n'}
+[1.321149] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__traits.hpp\n'}
+[1.321197] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__struct.hpp\n'}
+[1.321246] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__builder.hpp\n'}
+[1.321295] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__builder.hpp\n'}
+[1.321344] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__traits.hpp\n'}
+[1.321394] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__struct.hpp\n'}
+[1.321444] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__builder.hpp\n'}
+[1.321493] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__traits.hpp\n'}
+[1.321542] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__traits.hpp\n'}
+[1.321597] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__traits.hpp\n'}
+[1.321647] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__builder.hpp\n'}
+[1.321696] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__struct.hpp\n'}
+[1.321746] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__struct.hpp\n'}
+[1.321795] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__struct.hpp\n'}
+[1.321844] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/set_pen.hpp\n'}
+[1.321894] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/teleport_absolute.hpp\n'}
+[1.321947] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/kill.hpp\n'}
+[1.321997] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/spawn.hpp\n'}
+[1.322046] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg\n'}
+[1.322101] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.322189] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__builder.hpp\n'}
+[1.322239] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__traits.hpp\n'}
+[1.322289] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__struct.hpp\n'}
+[1.322337] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__struct.hpp\n'}
+[1.322386] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__builder.hpp\n'}
+[1.322437] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__traits.hpp\n'}
+[1.322486] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/color.hpp\n'}
+[1.322536] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/pose.hpp\n'}
+[1.322589] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action\n'}
+[1.322652] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.322702] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__traits.hpp\n'}
+[1.322755] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__builder.hpp\n'}
+[1.322804] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__struct.hpp\n'}
+[1.322857] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/rotate_absolute.hpp\n'}
+[1.322909] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim\n'}
+[1.322961] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv\n'}
+[1.323011] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail\n'}
+[1.323060] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__type_support.cpp\n'}
+[1.323114] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__type_support.cpp\n'}
+[1.323167] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.323220] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.323277] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__type_support.cpp\n'}
+[1.323332] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/spawn__type_support.cpp\n'}
+[1.323391] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.323447] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.323498] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.323554] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/srv/detail/teleport_absolute__type_support.cpp\n'}
+[1.323638] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg\n'}
+[1.323692] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail\n'}
+[1.323742] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.323792] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__type_support.cpp\n'}
+[1.323843] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.323893] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/msg/detail/color__type_support.cpp\n'}
+[1.323943] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action\n'}
+[1.323993] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail\n'}
+[1.324042] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__type_support.cpp\n'}
+[1.324092] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/include/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.324145] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_cpp.so\n'}
+[1.324197] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/libturtlesim__rosidl_typesupport_cpp.so\n'}
+[1.324248] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/environment/pythonpath.sh\n'}
+[1.324298] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/environment/pythonpath.dsv\n'}
+[1.324348] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/__init__.py\n'}
+[1.343602] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/action\n'}
+[1.343925] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/_rotate_absolute_s.c\n'}
+[1.344237] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/_rotate_absolute.py\n'}
+[1.344331] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/action/__init__.py\n'}
+[1.344468] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg\n'}
+[1.344617] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_pose.py\n'}
+[1.344712] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_color_s.c\n'}
+[1.344800] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_pose_s.c\n'}
+[1.344887] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/_color.py\n'}
+[1.344967] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/msg/__init__.py\n'}
+[1.345050] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv\n'}
+[1.345140] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_relative_s.c\n'}
+[1.345284] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_relative.py\n'}
+[1.345371] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_set_pen.py\n'}
+[1.345460] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_absolute_s.c\n'}
+[1.345544] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_teleport_absolute.py\n'}
+[1.345627] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_kill_s.c\n'}
+[1.345715] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_set_pen_s.c\n'}
+[1.345874] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_spawn_s.c\n'}
+[1.345964] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_kill.py\n'}
+[1.346061] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/_spawn.py\n'}
+[1.346161] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/srv/__init__.py\n'}
+[1.346253] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.346414] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.346538] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.346758] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/libturtlesim__python.so\n'}
+[1.346969] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/action/RotateAbsolute.idl\n'}
+[1.347255] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/msg/Color.idl\n'}
+[1.350455] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/msg/Pose.idl\n'}
+[1.350712] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/Kill.idl\n'}
+[1.355467] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/SetPen.idl\n'}
+[1.355661] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/Spawn.idl\n'}
+[1.355772] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.idl\n'}
+[1.355856] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/TeleportRelative.idl\n'}
+[1.355946] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/action/RotateAbsolute.action\n'}
+[1.356037] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/msg/Color.msg\n'}
+[1.356127] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/msg/Pose.msg\n'}
+[1.356212] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/Kill.srv\n'}
+[1.356294] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/Kill_Request.msg\n'}
+[1.356389] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/Kill_Response.msg\n'}
+[1.356504] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/SetPen.srv\n'}
+[1.356590] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/SetPen_Request.msg\n'}
+[1.356677] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/SetPen_Response.msg\n'}
+[1.356784] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/Spawn.srv\n'}
+[1.356964] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/Spawn_Request.msg\n'}
+[1.357073] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/Spawn_Response.msg\n'}
+[1.357168] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.srv\n'}
+[1.357278] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Request.msg\n'}
+[1.357419] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Response.msg\n'}
+[1.357520] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/TeleportRelative.srv\n'}
+[1.357597] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/TeleportRelative_Request.msg\n'}
+[1.357671] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/srv/TeleportRelative_Response.msg\n'}
+[1.357741] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/turtlesim/turtlesim_node\n'}
+[1.361253] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/turtlesim/turtle_teleop_key\n'}
+[1.361475] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/turtlesim/draw_square\n'}
+[1.361710] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/lib/turtlesim/mimic\n'}
+[1.362041] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/images\n'}
+[1.362247] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/images/eloquent.png\n'}
+[1.362354] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/images/bouncy.png\n'}
+[1.362469] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/images/dashing.png\n'}
+[1.362573] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/images/galactic.png\n'}
+[1.362683] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/images/crystal.png\n'}
+[1.362785] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/images/ardent.png\n'}
+[1.362887] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/images/foxy.png\n'}
+[1.362996] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/launch\n'}
+[1.363124] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/launch/multisim.launch.py\n'}
+[1.363237] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/ament_index/resource_index/package_run_dependencies/turtlesim\n'}
+[1.363340] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/ament_index/resource_index/parent_prefix_path/turtlesim\n'}
+[1.363440] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/environment/ament_prefix_path.sh\n'}
+[1.363543] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/environment/ament_prefix_path.dsv\n'}
+[1.363646] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/environment/path.sh\n'}
+[1.363748] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/environment/path.dsv\n'}
+[1.363848] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/local_setup.bash\n'}
+[1.363947] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/local_setup.sh\n'}
+[1.364048] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/local_setup.zsh\n'}
+[1.364161] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/local_setup.dsv\n'}
+[1.364270] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/package.dsv\n'}
+[1.364371] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/ament_index/resource_index/packages/turtlesim\n'}
+[1.364473] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cExport.cmake\n'}
+[1.364573] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.364672] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.364768] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.364868] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport.cmake\n'}
+[1.364969] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.365082] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_generator_cppExport.cmake\n'}
+[1.365184] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.365300] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.365961] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport.cmake\n'}
+[1.368286] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.368373] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/rosidl_cmake-extras.cmake\n'}
+[1.368430] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.368495] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.368550] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.368602] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.368655] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.368707] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.368757] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesimConfig.cmake\n'}
+[1.368844] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/cmake/turtlesimConfig-version.cmake\n'}
+[1.368917] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/turtlesim/share/turtlesim/package.xml\n'}
+[1.369802] (turtlesim) CommandEnded: {'returncode': 0}
+[1.402860] (-) TimerEvent: {}
+[1.427224] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[1.427500] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[1.427607] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[1.427706] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[1.427801] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[1.427896] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[1.456613] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.457254] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.458468] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[1.458708] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[1.458809] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/subscriber_member_function.py -> /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub\n'}
+[1.458949] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[1.463314] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[1.464569] (py_pubsub) StdoutLine: {'line': b'copying /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[1.464735] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc\n'}
+[1.464832] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[1.464935] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.466702] (py_pubsub) StdoutLine: {'line': b"removing '/home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.467679] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info\n'}
+[1.468564] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[1.477961] (my_package) StdoutLine: {'line': b'running egg_info\n'}
+[1.483519] (my_package) StdoutLine: {'line': b'writing ../../build/my_package/my_package.egg-info/PKG-INFO\n'}
+[1.483716] (my_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt\n'}
+[1.483807] (my_package) StdoutLine: {'line': b'writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt\n'}
+[1.483887] (my_package) StdoutLine: {'line': b'writing requirements to ../../build/my_package/my_package.egg-info/requires.txt\n'}
+[1.483995] (my_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt\n'}
+[1.491298] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/vboxuser/autocar/install/py_pubsub/lib/py_pubsub\n'}
+[1.491554] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/vboxuser/autocar/install/py_pubsub/lib/py_pubsub\n'}
+[1.491698] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/vboxuser/autocar/build/py_pubsub/install.log'\n"}
+[1.503474] (-) TimerEvent: {}
+[1.506283] (py_pubsub) CommandEnded: {'returncode': 0}
+[1.509081] (my_package) StdoutLine: {'line': b"reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.509818] (my_package) StdoutLine: {'line': b"writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.509972] (my_package) StdoutLine: {'line': b'running build\n'}
+[1.510089] (my_package) StdoutLine: {'line': b'running build_py\n'}
+[1.512987] (my_package) StdoutLine: {'line': b'running install\n'}
+[1.513616] (my_package) StdoutLine: {'line': b'running install_lib\n'}
+[1.513706] (my_package) StdoutLine: {'line': b'running install_data\n'}
+[1.513820] (my_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.514364] (my_package) StdoutLine: {'line': b"removing '/home/vboxuser/autocar/install/my_package/lib/python3.8/site-packages/my_package-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.514491] (my_package) StdoutLine: {'line': b'Copying ../../build/my_package/my_package.egg-info to /home/vboxuser/autocar/install/my_package/lib/python3.8/site-packages/my_package-0.0.0-py3.8.egg-info\n'}
+[1.516677] (my_package) StdoutLine: {'line': b'running install_scripts\n'}
+[1.519082] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[1.541436] (my_package) StdoutLine: {'line': b'Installing my_node script to /home/vboxuser/autocar/install/my_package/lib/my_package\n'}
+[1.541719] (my_package) StdoutLine: {'line': b"writing list of installed files to '/home/vboxuser/autocar/build/my_package/install.log'\n"}
+[1.574424] (my_package) CommandEnded: {'returncode': 0}
+[1.587143] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[1.604172] (-) TimerEvent: {}
+[1.642107] (turtlesim) JobEnded: {'identifier': 'turtlesim', 'rc': 0}
+[1.643018] (-) EventReactorShutdown: {}

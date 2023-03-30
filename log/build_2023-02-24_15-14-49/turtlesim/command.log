@@ -1,0 +1,6 @@
+Invoking command in '/home/vboxuser/autocar/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/vboxuser/autocar/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/vboxuser/autocar/install/turtlesim
+Invoked command in '/home/vboxuser/autocar/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/vboxuser/autocar/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/vboxuser/autocar/install/turtlesim
+Invoking command in '/home/vboxuser/autocar/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/vboxuser/autocar/build/turtlesim -- -j8 -l8
+Invoked command in '/home/vboxuser/autocar/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/vboxuser/autocar/build/turtlesim -- -j8 -l8
+Invoking command in '/home/vboxuser/autocar/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/vboxuser/autocar/build/turtlesim
+Invoked command in '/home/vboxuser/autocar/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/vboxuser/autocar/build/turtlesim

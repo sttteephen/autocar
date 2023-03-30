@@ -1,0 +1,971 @@
+[0.000000] (-) TimerEvent: {}
+[0.003571] (eufs_msgs) JobQueued: {'identifier': 'eufs_msgs', 'dependencies': OrderedDict()}
+[0.003668] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('eufs_msgs', '/home/vboxuser/autocar/install/eufs_msgs')])}
+[0.003707] (eufs_msgs) JobStarted: {'identifier': 'eufs_msgs'}
+[0.015440] (eufs_msgs) JobProgress: {'identifier': 'eufs_msgs', 'progress': 'cmake'}
+[0.016364] (eufs_msgs) JobProgress: {'identifier': 'eufs_msgs', 'progress': 'build'}
+[0.017212] (eufs_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vboxuser/autocar/build/eufs_msgs', '--', '-j8', '-l8'], 'cwd': '/home/vboxuser/autocar/build/eufs_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('SSH_AGENT_PID', '1693'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib:/home/vboxuser/autocar/install/turtlesim/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser/autocar/src/eufs_msgs'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1480'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/vboxuser/autocar/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:41153'), ('EUFS_MASTER', '/home/vboxuser/sim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/sim:@/tmp/.ICE-unix/1763,unix/sim:/tmp/.ICE-unix/1763'), ('INVOCATION_ID', '85769383a54e40b0a3099068e016c239'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f7f12fbd_d227_422a_b2ed_f6103774822a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic:/home/vboxuser/autocar/install/turtlesim:/home/vboxuser/autocar/install/py_pubsub:/home/vboxuser/autocar/install/my_package'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/autocar/build/eufs_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages:/home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages:/home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages:/home/vboxuser/autocar/install/my_package/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/autocar/install/turtlesim:/opt/ros/galactic:/home/vboxuser/autocar/install/py_pubsub:/home/vboxuser/autocar/install/my_package')]), 'shell': False}
+[0.100027] (-) TimerEvent: {}
+[0.117594] (eufs_msgs) StdoutLine: {'line': b'[  0%] Built target eufs_msgs__cpp\n'}
+[0.134722] (eufs_msgs) StdoutLine: {'line': b'[ 12%] Built target eufs_msgs__rosidl_generator_c\n'}
+[0.166360] (eufs_msgs) StdoutLine: {'line': b'[ 24%] Built target eufs_msgs__rosidl_typesupport_cpp\n'}
+[0.175214] (eufs_msgs) StdoutLine: {'line': b'[ 36%] Built target eufs_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.181292] (eufs_msgs) StdoutLine: {'line': b'[ 49%] Built target eufs_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.202630] (-) TimerEvent: {}
+[0.206735] (eufs_msgs) StdoutLine: {'line': b'[ 62%] Built target eufs_msgs__rosidl_typesupport_c\n'}
+[0.217838] (eufs_msgs) StdoutLine: {'line': b'[ 75%] Built target eufs_msgs__rosidl_typesupport_introspection_c\n'}
+[0.227059] (eufs_msgs) StdoutLine: {'line': b'[ 88%] Built target eufs_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.248242] (eufs_msgs) StdoutLine: {'line': b'[ 88%] Built target eufs_msgs\n'}
+[0.269892] (eufs_msgs) StdoutLine: {'line': b'[ 88%] Built target eufs_msgs__py\n'}
+[0.303115] (-) TimerEvent: {}
+[0.321668] (eufs_msgs) StdoutLine: {'line': b'[100%] Built target eufs_msgs__python\n'}
+[0.362140] (eufs_msgs) StdoutLine: {'line': b'[100%] Built target eufs_msgs__rosidl_typesupport_c__pyext\n'}
+[0.368864] (eufs_msgs) StdoutLine: {'line': b'[100%] Built target eufs_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.403206] (-) TimerEvent: {}
+[0.403548] (eufs_msgs) StdoutLine: {'line': b'[100%] Built target eufs_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.435397] (eufs_msgs) CommandEnded: {'returncode': 0}
+[0.503347] (-) TimerEvent: {}
+[0.604445] (-) TimerEvent: {}
+[0.706295] (-) TimerEvent: {}
+[0.813844] (-) TimerEvent: {}
+[0.914336] (-) TimerEvent: {}
+[1.014890] (-) TimerEvent: {}
+[1.115967] (-) TimerEvent: {}
+[1.216393] (-) TimerEvent: {}
+[1.316844] (-) TimerEvent: {}
+[1.418454] (-) TimerEvent: {}
+[1.518973] (-) TimerEvent: {}
+[1.578812] (eufs_msgs) JobProgress: {'identifier': 'eufs_msgs', 'progress': 'install'}
+[1.600259] (eufs_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vboxuser/autocar/build/eufs_msgs'], 'cwd': '/home/vboxuser/autocar/build/eufs_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('SSH_AGENT_PID', '1693'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib:/home/vboxuser/autocar/install/turtlesim/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser/autocar/src/eufs_msgs'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1480'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/vboxuser/autocar/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'vboxuser'), ('JOURNAL_STREAM', '8:41153'), ('EUFS_MASTER', '/home/vboxuser/sim'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/sim:@/tmp/.ICE-unix/1763,unix/sim:/tmp/.ICE-unix/1763'), ('INVOCATION_ID', '85769383a54e40b0a3099068e016c239'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f7f12fbd_d227_422a_b2ed_f6103774822a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic:/home/vboxuser/autocar/install/turtlesim:/home/vboxuser/autocar/install/py_pubsub:/home/vboxuser/autocar/install/my_package'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/autocar/build/eufs_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages:/home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages:/home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages:/home/vboxuser/autocar/install/my_package/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/autocar/install/turtlesim:/opt/ros/galactic:/home/vboxuser/autocar/install/py_pubsub:/home/vboxuser/autocar/install/my_package')]), 'shell': False}
+[1.619117] (-) TimerEvent: {}
+[1.620243] (eufs_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.620568] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/ament_index/resource_index/rosidl_interfaces/eufs_msgs\n'}
+[1.620675] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs\n'}
+[1.620770] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv\n'}
+[1.620856] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail\n'}
+[1.620939] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__functions.c\n'}
+[1.621022] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__struct.h\n'}
+[1.621103] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__functions.c\n'}
+[1.621187] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__type_support.h\n'}
+[1.621269] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__type_support.h\n'}
+[1.621349] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__functions.h\n'}
+[1.621436] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__struct.h\n'}
+[1.621517] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__functions.h\n'}
+[1.621603] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/register.h\n'}
+[1.621683] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/set_can_state.h\n'}
+[1.621763] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg\n'}
+[1.621842] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/heartbeat.h\n'}
+[1.621920] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/integration_err.h\n'}
+[1.622702] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/can_state.h\n'}
+[1.623582] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/system_status.h\n'}
+[1.624294] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail\n'}
+[1.624556] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__functions.c\n'}
+[1.624649] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__functions.h\n'}
+[1.624823] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__type_support.h\n'}
+[1.624914] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__functions.c\n'}
+[1.625026] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__type_support.h\n'}
+[1.625536] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__struct.h\n'}
+[1.626072] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__functions.h\n'}
+[1.629210] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__type_support.h\n'}
+[1.629352] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__functions.c\n'}
+[1.629463] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__type_support.h\n'}
+[1.629555] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__type_support.h\n'}
+[1.629640] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__functions.h\n'}
+[1.629737] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__type_support.h\n'}
+[1.629838] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__functions.h\n'}
+[1.629931] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__functions.c\n'}
+[1.630712] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__functions.c\n'}
+[1.630789] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__functions.h\n'}
+[1.630850] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__functions.h\n'}
+[1.630906] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__functions.h\n'}
+[1.630959] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__functions.h\n'}
+[1.631017] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__functions.c\n'}
+[1.631074] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__functions.c\n'}
+[1.631165] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__functions.h\n'}
+[1.633222] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__functions.c\n'}
+[1.633351] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__functions.c\n'}
+[1.633426] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__struct.h\n'}
+[1.633536] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__struct.h\n'}
+[1.633594] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__functions.c\n'}
+[1.633650] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__functions.c\n'}
+[1.633730] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__type_support.h\n'}
+[1.633808] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__functions.c\n'}
+[1.633888] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__functions.h\n'}
+[1.633966] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__type_support.h\n'}
+[1.634051] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__functions.h\n'}
+[1.634147] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__type_support.h\n'}
+[1.634231] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__functions.c\n'}
+[1.634315] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__functions.c\n'}
+[1.634436] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__struct.h\n'}
+[1.634579] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__functions.h\n'}
+[1.634689] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__type_support.h\n'}
+[1.634770] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__struct.h\n'}
+[1.634854] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__struct.h\n'}
+[1.634942] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__functions.c\n'}
+[1.635497] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__struct.h\n'}
+[1.635590] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__functions.h\n'}
+[1.635675] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__struct.h\n'}
+[1.635763] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__struct.h\n'}
+[1.635844] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__functions.h\n'}
+[1.635927] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__struct.h\n'}
+[1.636015] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__struct.h\n'}
+[1.636191] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__functions.h\n'}
+[1.636393] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__type_support.h\n'}
+[1.636478] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__functions.c\n'}
+[1.636553] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__type_support.h\n'}
+[1.636632] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__type_support.h\n'}
+[1.636715] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__functions.c\n'}
+[1.636800] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__struct.h\n'}
+[1.636879] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__type_support.h\n'}
+[1.636959] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__functions.c\n'}
+[1.637050] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__functions.c\n'}
+[1.637128] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__functions.c\n'}
+[1.637212] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__functions.c\n'}
+[1.637291] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__functions.c\n'}
+[1.637375] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__functions.c\n'}
+[1.637458] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__struct.h\n'}
+[1.637534] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__functions.h\n'}
+[1.637616] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__functions.h\n'}
+[1.637694] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__type_support.h\n'}
+[1.637773] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__struct.h\n'}
+[1.637858] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__functions.h\n'}
+[1.637936] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__struct.h\n'}
+[1.638011] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__functions.c\n'}
+[1.638088] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__functions.h\n'}
+[1.638166] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__struct.h\n'}
+[1.638310] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__type_support.h\n'}
+[1.638445] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__type_support.h\n'}
+[1.643645] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__functions.h\n'}
+[1.643815] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__functions.c\n'}
+[1.643932] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__type_support.h\n'}
+[1.644038] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__struct.h\n'}
+[1.644132] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__struct.h\n'}
+[1.644218] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__struct.h\n'}
+[1.644300] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__functions.c\n'}
+[1.644381] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__struct.h\n'}
+[1.644504] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__functions.h\n'}
+[1.644599] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__struct.h\n'}
+[1.644754] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__struct.h\n'}
+[1.644942] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__type_support.h\n'}
+[1.645057] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__functions.c\n'}
+[1.645148] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__struct.h\n'}
+[1.645238] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__type_support.h\n'}
+[1.645333] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__struct.h\n'}
+[1.645438] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__type_support.h\n'}
+[1.645537] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__functions.c\n'}
+[1.645627] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__type_support.h\n'}
+[1.645730] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__struct.h\n'}
+[1.645838] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__functions.h\n'}
+[1.645943] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__functions.c\n'}
+[1.646043] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__struct.h\n'}
+[1.646146] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__struct.h\n'}
+[1.646259] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__type_support.h\n'}
+[1.646367] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__type_support.h\n'}
+[1.647831] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__functions.h\n'}
+[1.647974] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__functions.h\n'}
+[1.648116] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__type_support.h\n'}
+[1.648225] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__struct.h\n'}
+[1.648363] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__type_support.h\n'}
+[1.648472] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__functions.c\n'}
+[1.648574] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__struct.h\n'}
+[1.648723] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__functions.c\n'}
+[1.648898] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__functions.h\n'}
+[1.649049] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__functions.h\n'}
+[1.649195] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__functions.h\n'}
+[1.649351] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__struct.h\n'}
+[1.649510] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__struct.h\n'}
+[1.649667] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__functions.h\n'}
+[1.650017] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__functions.c\n'}
+[1.650197] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__struct.h\n'}
+[1.650357] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__type_support.h\n'}
+[1.650572] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__type_support.h\n'}
+[1.650749] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__type_support.h\n'}
+[1.650925] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__functions.h\n'}
+[1.651081] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__functions.c\n'}
+[1.651231] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__struct.h\n'}
+[1.651380] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__functions.h\n'}
+[1.651520] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__functions.c\n'}
+[1.651661] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__type_support.h\n'}
+[1.651806] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__functions.c\n'}
+[1.651942] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__type_support.h\n'}
+[1.652081] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__functions.h\n'}
+[1.652216] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__type_support.h\n'}
+[1.652353] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__type_support.h\n'}
+[1.652491] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__functions.h\n'}
+[1.652642] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__functions.h\n'}
+[1.652789] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__type_support.h\n'}
+[1.652953] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__struct.h\n'}
+[1.653054] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__type_support.h\n'}
+[1.653147] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__struct.h\n'}
+[1.653240] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__functions.c\n'}
+[1.653336] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__type_support.h\n'}
+[1.653431] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__functions.c\n'}
+[1.653524] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__struct.h\n'}
+[1.653617] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__functions.h\n'}
+[1.653709] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__functions.h\n'}
+[1.653807] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__functions.h\n'}
+[1.653902] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__struct.h\n'}
+[1.653995] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__functions.h\n'}
+[1.654097] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__type_support.h\n'}
+[1.654202] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/ekf_state.h\n'}
+[1.654297] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/runstop.h\n'}
+[1.654400] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/bounding_box.h\n'}
+[1.654497] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/node_state.h\n'}
+[1.660075] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/cone_with_covariance.h\n'}
+[1.660214] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/slam_err.h\n'}
+[1.660323] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/ekf_err.h\n'}
+[1.660417] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/waypoint.h\n'}
+[1.660510] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/slam_state.h\n'}
+[1.660636] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/vehicle_commands.h\n'}
+[1.660734] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/path_integral_status.h\n'}
+[1.660852] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/point_array_stamped.h\n'}
+[1.660955] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/topic_status.h\n'}
+[1.661045] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/waypoint_array_stamped.h\n'}
+[1.661128] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/path_integral_timing.h\n'}
+[1.661225] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/bounding_boxes.h\n'}
+[1.661327] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/cone_array_with_covariance.h\n'}
+[1.661424] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/full_state.h\n'}
+[1.661516] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/point_array.h\n'}
+[1.661611] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/wheel_speeds.h\n'}
+[1.661704] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/wheel_speeds_stamped.h\n'}
+[1.661836] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/car_state.h\n'}
+[1.661942] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/vehicle_commands_stamped.h\n'}
+[1.662052] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/lap_stats.h\n'}
+[1.662148] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/wheel_odometry_err.h\n'}
+[1.662229] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/node_state_array.h\n'}
+[1.662319] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/chassis_command.h\n'}
+[1.662402] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/path_integral_params.h\n'}
+[1.663741] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/path_integral_stats.h\n'}
+[1.663988] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/cone_array.h\n'}
+[1.664134] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.664242] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/state_machine_state.h\n'}
+[1.664369] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/costmap.h\n'}
+[1.664476] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/chassis_state.h\n'}
+[1.664571] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action\n'}
+[1.664669] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail\n'}
+[1.664760] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__functions.c\n'}
+[1.664851] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__functions.h\n'}
+[1.664937] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__type_support.h\n'}
+[1.665022] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__struct.h\n'}
+[1.665109] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/check_for_objects.h\n'}
+[1.665210] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/environment/library_path.sh\n'}
+[1.665295] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/environment/library_path.dsv\n'}
+[1.665384] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/libeufs_msgs__rosidl_generator_c.so\n'}
+[1.665483] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs\n'}
+[1.665581] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv\n'}
+[1.665676] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail\n'}
+[1.665771] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.665861] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__rosidl_typesupport_fastrtps_c.h\n'}
+[1.665953] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg\n'}
+[1.666045] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail\n'}
+[1.666149] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.666252] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[1.666363] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__rosidl_typesupport_fastrtps_c.h\n'}
+[1.666464] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__rosidl_typesupport_fastrtps_c.h\n'}
+[1.666662] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__rosidl_typesupport_fastrtps_c.h\n'}
+[1.666751] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__rosidl_typesupport_fastrtps_c.h\n'}
+[1.666833] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__rosidl_typesupport_fastrtps_c.h\n'}
+[1.666916] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.666999] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667082] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667167] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667250] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667331] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667406] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667491] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667569] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667654] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667861] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__rosidl_typesupport_fastrtps_c.h\n'}
+[1.667981] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__rosidl_typesupport_fastrtps_c.h\n'}
+[1.668103] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__rosidl_typesupport_fastrtps_c.h\n'}
+[1.668209] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__rosidl_typesupport_fastrtps_c.h\n'}
+[1.668294] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.668378] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.668460] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.668546] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__rosidl_typesupport_fastrtps_c.h\n'}
+[1.668631] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[1.668706] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__rosidl_typesupport_fastrtps_c.h\n'}
+[1.673560] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__rosidl_typesupport_fastrtps_c.h\n'}
+[1.673742] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__rosidl_typesupport_fastrtps_c.h\n'}
+[1.673849] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__rosidl_typesupport_fastrtps_c.h\n'}
+[1.673961] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__rosidl_typesupport_fastrtps_c.h\n'}
+[1.674064] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__rosidl_typesupport_fastrtps_c.h\n'}
+[1.674182] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__rosidl_typesupport_fastrtps_c.h\n'}
+[1.674336] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.674959] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__rosidl_typesupport_fastrtps_c.h\n'}
+[1.675122] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__rosidl_typesupport_fastrtps_c.h\n'}
+[1.675275] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__rosidl_typesupport_fastrtps_c.h\n'}
+[1.675441] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.675607] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action\n'}
+[1.675767] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail\n'}
+[1.675927] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__rosidl_typesupport_fastrtps_c.h\n'}
+[1.676034] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/libeufs_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.676140] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs\n'}
+[1.676265] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv\n'}
+[1.676365] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail\n'}
+[1.676461] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/dds_fastrtps\n'}
+[1.676566] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.676674] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.676802] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg\n'}
+[1.676898] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail\n'}
+[1.676993] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.677091] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.677184] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.677277] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.677370] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.677470] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.677566] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.677671] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.677788] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.677908] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.678010] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.678127] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.678201] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.678287] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/dds_fastrtps\n'}
+[1.678343] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.678425] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.678490] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.678559] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.678653] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680036] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680179] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680287] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680383] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680479] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680593] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680653] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680707] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680761] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680813] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680895] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.680953] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.681033] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.681086] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.681145] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.681196] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.681247] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.681298] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.681349] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.684875] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.685111] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action\n'}
+[1.685249] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail\n'}
+[1.685348] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/dds_fastrtps\n'}
+[1.685438] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.685525] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/libeufs_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.685618] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs\n'}
+[1.685707] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv\n'}
+[1.685772] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail\n'}
+[1.685839] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__rosidl_typesupport_introspection_c.h\n'}
+[1.685897] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__type_support.c\n'}
+[1.685982] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__rosidl_typesupport_introspection_c.h\n'}
+[1.686047] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__type_support.c\n'}
+[1.686104] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg\n'}
+[1.686157] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail\n'}
+[1.686209] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__type_support.c\n'}
+[1.686263] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__type_support.c\n'}
+[1.686315] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__rosidl_typesupport_introspection_c.h\n'}
+[1.686368] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__rosidl_typesupport_introspection_c.h\n'}
+[1.686423] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__type_support.c\n'}
+[1.686534] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__type_support.c\n'}
+[1.686588] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__type_support.c\n'}
+[1.686640] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__rosidl_typesupport_introspection_c.h\n'}
+[1.686693] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__type_support.c\n'}
+[1.686745] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__rosidl_typesupport_introspection_c.h\n'}
+[1.686797] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__type_support.c\n'}
+[1.686853] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__type_support.c\n'}
+[1.686907] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__type_support.c\n'}
+[1.686987] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__type_support.c\n'}
+[1.687041] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__type_support.c\n'}
+[1.687102] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__type_support.c\n'}
+[1.687155] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__rosidl_typesupport_introspection_c.h\n'}
+[1.687207] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__rosidl_typesupport_introspection_c.h\n'}
+[1.687259] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__rosidl_typesupport_introspection_c.h\n'}
+[1.687310] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__rosidl_typesupport_introspection_c.h\n'}
+[1.687361] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__rosidl_typesupport_introspection_c.h\n'}
+[1.687413] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__rosidl_typesupport_introspection_c.h\n'}
+[1.687465] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__rosidl_typesupport_introspection_c.h\n'}
+[1.687516] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__rosidl_typesupport_introspection_c.h\n'}
+[1.687568] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__rosidl_typesupport_introspection_c.h\n'}
+[1.687620] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__type_support.c\n'}
+[1.687672] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__type_support.c\n'}
+[1.687723] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__type_support.c\n'}
+[1.687780] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__rosidl_typesupport_introspection_c.h\n'}
+[1.687842] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__type_support.c\n'}
+[1.687893] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__rosidl_typesupport_introspection_c.h\n'}
+[1.687978] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__type_support.c\n'}
+[1.688032] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__rosidl_typesupport_introspection_c.h\n'}
+[1.688084] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__rosidl_typesupport_introspection_c.h\n'}
+[1.688136] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__rosidl_typesupport_introspection_c.h\n'}
+[1.688225] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__rosidl_typesupport_introspection_c.h\n'}
+[1.688280] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__rosidl_typesupport_introspection_c.h\n'}
+[1.688333] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__type_support.c\n'}
+[1.688384] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__rosidl_typesupport_introspection_c.h\n'}
+[1.688435] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__type_support.c\n'}
+[1.688487] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__type_support.c\n'}
+[1.688539] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__rosidl_typesupport_introspection_c.h\n'}
+[1.688591] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__rosidl_typesupport_introspection_c.h\n'}
+[1.688643] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__type_support.c\n'}
+[1.688695] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__rosidl_typesupport_introspection_c.h\n'}
+[1.688748] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__type_support.c\n'}
+[1.688800] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__rosidl_typesupport_introspection_c.h\n'}
+[1.688852] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__type_support.c\n'}
+[1.688926] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__type_support.c\n'}
+[1.688981] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__rosidl_typesupport_introspection_c.h\n'}
+[1.689035] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__type_support.c\n'}
+[1.689096] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__rosidl_typesupport_introspection_c.h\n'}
+[1.689148] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__rosidl_typesupport_introspection_c.h\n'}
+[1.689199] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__type_support.c\n'}
+[1.689260] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__rosidl_typesupport_introspection_c.h\n'}
+[1.689314] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__type_support.c\n'}
+[1.689365] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__rosidl_typesupport_introspection_c.h\n'}
+[1.689416] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__type_support.c\n'}
+[1.689472] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__type_support.c\n'}
+[1.689524] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__type_support.c\n'}
+[1.689575] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__type_support.c\n'}
+[1.689633] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__rosidl_typesupport_introspection_c.h\n'}
+[1.689684] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__type_support.c\n'}
+[1.689736] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__rosidl_typesupport_introspection_c.h\n'}
+[1.689787] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__rosidl_typesupport_introspection_c.h\n'}
+[1.689838] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__rosidl_typesupport_introspection_c.h\n'}
+[1.689913] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__type_support.c\n'}
+[1.689968] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__type_support.c\n'}
+[1.690020] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__type_support.c\n'}
+[1.690071] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__type_support.c\n'}
+[1.691957] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__rosidl_typesupport_introspection_c.h\n'}
+[1.692118] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__rosidl_typesupport_introspection_c.h\n'}
+[1.692236] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__type_support.c\n'}
+[1.692375] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__rosidl_typesupport_introspection_c.h\n'}
+[1.692485] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.692603] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action\n'}
+[1.692711] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail\n'}
+[1.692817] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__type_support.c\n'}
+[1.692924] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__rosidl_typesupport_introspection_c.h\n'}
+[1.693023] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/libeufs_msgs__rosidl_typesupport_introspection_c.so\n'}
+[1.693126] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/libeufs_msgs__rosidl_typesupport_c.so\n'}
+[1.693228] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs\n'}
+[1.693389] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv\n'}
+[1.693508] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail\n'}
+[1.693615] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__traits.hpp\n'}
+[1.693716] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__traits.hpp\n'}
+[1.693826] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__builder.hpp\n'}
+[1.693933] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__struct.hpp\n'}
+[1.694033] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__builder.hpp\n'}
+[1.694134] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__struct.hpp\n'}
+[1.694227] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/set_can_state.hpp\n'}
+[1.694316] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/register.hpp\n'}
+[1.694710] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg\n'}
+[1.694794] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/system_status.hpp\n'}
+[1.694854] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/node_state.hpp\n'}
+[1.694909] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/bounding_box.hpp\n'}
+[1.694963] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail\n'}
+[1.695022] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__builder.hpp\n'}
+[1.695094] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__builder.hpp\n'}
+[1.695145] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__traits.hpp\n'}
+[1.695198] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__traits.hpp\n'}
+[1.695248] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__builder.hpp\n'}
+[1.695313] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__builder.hpp\n'}
+[1.695365] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__builder.hpp\n'}
+[1.695428] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__traits.hpp\n'}
+[1.695482] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__traits.hpp\n'}
+[1.695533] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__builder.hpp\n'}
+[1.695603] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__builder.hpp\n'}
+[1.695674] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__traits.hpp\n'}
+[1.695729] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__struct.hpp\n'}
+[1.695780] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__struct.hpp\n'}
+[1.695830] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__builder.hpp\n'}
+[1.695883] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__traits.hpp\n'}
+[1.695935] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__builder.hpp\n'}
+[1.695986] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__traits.hpp\n'}
+[1.696037] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__builder.hpp\n'}
+[1.696091] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__traits.hpp\n'}
+[1.696145] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__traits.hpp\n'}
+[1.696196] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__builder.hpp\n'}
+[1.696247] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__builder.hpp\n'}
+[1.696298] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__struct.hpp\n'}
+[1.696348] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__builder.hpp\n'}
+[1.696403] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__builder.hpp\n'}
+[1.696455] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__struct.hpp\n'}
+[1.696506] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__traits.hpp\n'}
+[1.696557] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__struct.hpp\n'}
+[1.696608] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__builder.hpp\n'}
+[1.698398] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__traits.hpp\n'}
+[1.698520] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__builder.hpp\n'}
+[1.698620] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__builder.hpp\n'}
+[1.698681] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__traits.hpp\n'}
+[1.698734] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__traits.hpp\n'}
+[1.698787] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__builder.hpp\n'}
+[1.698839] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__builder.hpp\n'}
+[1.698890] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__traits.hpp\n'}
+[1.698951] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__struct.hpp\n'}
+[1.699030] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__traits.hpp\n'}
+[1.699083] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__traits.hpp\n'}
+[1.699135] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__traits.hpp\n'}
+[1.699185] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__builder.hpp\n'}
+[1.699236] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__builder.hpp\n'}
+[1.699287] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__traits.hpp\n'}
+[1.699337] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__struct.hpp\n'}
+[1.699386] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__traits.hpp\n'}
+[1.699436] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__traits.hpp\n'}
+[1.699487] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__struct.hpp\n'}
+[1.699537] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__traits.hpp\n'}
+[1.699588] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__traits.hpp\n'}
+[1.699642] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__struct.hpp\n'}
+[1.699696] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__struct.hpp\n'}
+[1.699747] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__traits.hpp\n'}
+[1.699798] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__struct.hpp\n'}
+[1.699852] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__builder.hpp\n'}
+[1.699903] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__traits.hpp\n'}
+[1.699952] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__struct.hpp\n'}
+[1.700002] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__builder.hpp\n'}
+[1.700052] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__struct.hpp\n'}
+[1.700102] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__struct.hpp\n'}
+[1.700152] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__builder.hpp\n'}
+[1.700203] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__struct.hpp\n'}
+[1.700258] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__builder.hpp\n'}
+[1.700309] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__struct.hpp\n'}
+[1.700359] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__traits.hpp\n'}
+[1.700409] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__builder.hpp\n'}
+[1.700460] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__struct.hpp\n'}
+[1.700510] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__struct.hpp\n'}
+[1.700561] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__traits.hpp\n'}
+[1.700611] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__struct.hpp\n'}
+[1.700661] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__struct.hpp\n'}
+[1.700710] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__builder.hpp\n'}
+[1.700765] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__struct.hpp\n'}
+[1.700824] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__struct.hpp\n'}
+[1.700875] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__builder.hpp\n'}
+[1.700926] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__traits.hpp\n'}
+[1.700976] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__traits.hpp\n'}
+[1.701026] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__traits.hpp\n'}
+[1.701077] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__traits.hpp\n'}
+[1.701131] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__struct.hpp\n'}
+[1.701181] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__struct.hpp\n'}
+[1.701236] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__builder.hpp\n'}
+[1.701527] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__traits.hpp\n'}
+[1.701594] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__struct.hpp\n'}
+[1.701647] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__struct.hpp\n'}
+[1.701698] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__struct.hpp\n'}
+[1.701804] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__struct.hpp\n'}
+[1.701860] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__struct.hpp\n'}
+[1.701915] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__traits.hpp\n'}
+[1.701966] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__builder.hpp\n'}
+[1.702064] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__builder.hpp\n'}
+[1.702147] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__builder.hpp\n'}
+[1.702226] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__builder.hpp\n'}
+[1.702325] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__builder.hpp\n'}
+[1.702423] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__struct.hpp\n'}
+[1.702588] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__struct.hpp\n'}
+[1.702678] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__traits.hpp\n'}
+[1.702756] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__traits.hpp\n'}
+[1.702856] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__struct.hpp\n'}
+[1.702976] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__traits.hpp\n'}
+[1.703086] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__builder.hpp\n'}
+[1.703262] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__builder.hpp\n'}
+[1.703662] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__struct.hpp\n'}
+[1.703805] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__struct.hpp\n'}
+[1.703990] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__struct.hpp\n'}
+[1.704085] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__builder.hpp\n'}
+[1.704172] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__traits.hpp\n'}
+[1.704250] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__traits.hpp\n'}
+[1.704327] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__struct.hpp\n'}
+[1.704404] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__struct.hpp\n'}
+[1.704573] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/slam_err.hpp\n'}
+[1.704660] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/ekf_state.hpp\n'}
+[1.704752] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/chassis_command.hpp\n'}
+[1.704833] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/wheel_speeds.hpp\n'}
+[1.704916] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/vehicle_commands_stamped.hpp\n'}
+[1.704994] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/path_integral_timing.hpp\n'}
+[1.705072] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/full_state.hpp\n'}
+[1.705147] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/cone_array.hpp\n'}
+[1.705230] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/path_integral_params.hpp\n'}
+[1.705306] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/waypoint_array_stamped.hpp\n'}
+[1.705383] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/waypoint.hpp\n'}
+[1.705462] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/node_state_array.hpp\n'}
+[1.705547] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/heartbeat.hpp\n'}
+[1.705623] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/bounding_boxes.hpp\n'}
+[1.705710] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/runstop.hpp\n'}
+[1.705790] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/state_machine_state.hpp\n'}
+[1.705869] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/ekf_err.hpp\n'}
+[1.705950] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/topic_status.hpp\n'}
+[1.706035] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/path_integral_stats.hpp\n'}
+[1.706111] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/car_state.hpp\n'}
+[1.706188] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/vehicle_commands.hpp\n'}
+[1.706267] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/costmap.hpp\n'}
+[1.706367] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/lap_stats.hpp\n'}
+[1.706458] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/cone_with_covariance.hpp\n'}
+[1.706593] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/point_array_stamped.hpp\n'}
+[1.706687] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/slam_state.hpp\n'}
+[1.711672] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/point_array.hpp\n'}
+[1.711919] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/can_state.hpp\n'}
+[1.712061] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/integration_err.hpp\n'}
+[1.712166] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/wheel_speeds_stamped.hpp\n'}
+[1.712255] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/cone_array_with_covariance.hpp\n'}
+[1.712337] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/wheel_odometry_err.hpp\n'}
+[1.712418] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/chassis_state.hpp\n'}
+[1.712501] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/path_integral_status.hpp\n'}
+[1.712587] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action\n'}
+[1.712669] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/check_for_objects.hpp\n'}
+[1.712767] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail\n'}
+[1.712930] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__builder.hpp\n'}
+[1.713090] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__struct.hpp\n'}
+[1.713194] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__traits.hpp\n'}
+[1.713279] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs\n'}
+[1.713390] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv\n'}
+[1.713471] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail\n'}
+[1.713550] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__type_support.cpp\n'}
+[1.713630] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__type_support.cpp\n'}
+[1.713708] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/set_can_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.713788] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/srv/detail/register__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.713900] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg\n'}
+[1.714002] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail\n'}
+[1.714124] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__type_support.cpp\n'}
+[1.714203] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__type_support.cpp\n'}
+[1.714295] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__type_support.cpp\n'}
+[1.714403] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.714541] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__type_support.cpp\n'}
+[1.714677] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__type_support.cpp\n'}
+[1.714807] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.714928] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.715108] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/state_machine_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.719601] (-) TimerEvent: {}
+[1.719817] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.719992] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.720124] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.720262] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__type_support.cpp\n'}
+[1.720404] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.720551] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.720664] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__type_support.cpp\n'}
+[1.720766] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/costmap__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.720867] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint_array_stamped__type_support.cpp\n'}
+[1.721123] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.721247] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.721361] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_with_covariance__type_support.cpp\n'}
+[1.721553] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds_stamped__type_support.cpp\n'}
+[1.721671] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.721790] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_odometry_err__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.721890] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.721971] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__type_support.cpp\n'}
+[1.722044] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__type_support.cpp\n'}
+[1.722128] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_err__type_support.cpp\n'}
+[1.722211] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__type_support.cpp\n'}
+[1.722267] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/topic_status__type_support.cpp\n'}
+[1.722323] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.722403] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_stats__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.722523] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.722586] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.722661] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.722715] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_params__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.722767] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.722825] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands_stamped__type_support.cpp\n'}
+[1.722878] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_box__type_support.cpp\n'}
+[1.722929] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/lap_stats__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.722979] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__type_support.cpp\n'}
+[1.723029] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.723079] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array_with_covariance__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.723130] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__type_support.cpp\n'}
+[1.723179] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/cone_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.723235] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/waypoint__type_support.cpp\n'}
+[1.723285] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__type_support.cpp\n'}
+[1.723336] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.723868] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/ekf_state__type_support.cpp\n'}
+[1.724012] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__type_support.cpp\n'}
+[1.724134] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state__type_support.cpp\n'}
+[1.724243] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__type_support.cpp\n'}
+[1.739251] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.739479] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/node_state_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.739598] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/full_state__type_support.cpp\n'}
+[1.739696] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/bounding_boxes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.739804] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_state__type_support.cpp\n'}
+[1.739917] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array_stamped__type_support.cpp\n'}
+[1.740014] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/heartbeat__type_support.cpp\n'}
+[1.740102] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/integration_err__type_support.cpp\n'}
+[1.740193] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__type_support.cpp\n'}
+[1.740300] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/can_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.740396] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__type_support.cpp\n'}
+[1.740486] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_status__type_support.cpp\n'}
+[1.740579] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/wheel_speeds__type_support.cpp\n'}
+[1.740674] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/vehicle_commands__type_support.cpp\n'}
+[1.740775] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/car_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.740873] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/system_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.740986] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/slam_err__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.741091] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.741188] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/chassis_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.741275] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/runstop__type_support.cpp\n'}
+[1.741364] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/point_array__type_support.cpp\n'}
+[1.741451] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/msg/detail/path_integral_timing__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.741539] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action\n'}
+[1.741632] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail\n'}
+[1.741727] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.741822] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/include/eufs_msgs/action/detail/check_for_objects__type_support.cpp\n'}
+[1.741919] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/libeufs_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.742015] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/libeufs_msgs__rosidl_typesupport_cpp.so\n'}
+[1.742109] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/environment/pythonpath.sh\n'}
+[1.742208] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/environment/pythonpath.dsv\n'}
+[1.742296] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/__init__.py\n'}
+[1.742388] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg\n'}
+[1.742496] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_heartbeat.py\n'}
+[1.742602] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_slam_err.py\n'}
+[1.742755] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_node_state_array_s.c\n'}
+[1.742864] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_cone_with_covariance.py\n'}
+[1.742974] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_ekf_err_s.c\n'}
+[1.743077] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_wheel_speeds_stamped.py\n'}
+[1.743175] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_path_integral_timing_s.c\n'}
+[1.743288] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_cone_with_covariance_s.c\n'}
+[1.743382] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_topic_status_s.c\n'}
+[1.743481] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_system_status.py\n'}
+[1.743573] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_path_integral_stats_s.c\n'}
+[1.743669] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_path_integral_stats.py\n'}
+[1.743774] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_waypoint.py\n'}
+[1.743871] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_path_integral_params.py\n'}
+[1.743962] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_wheel_odometry_err.py\n'}
+[1.744043] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_bounding_box.py\n'}
+[1.744133] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_cone_array_with_covariance_s.c\n'}
+[1.744215] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_point_array_s.c\n'}
+[1.744299] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_lap_stats.py\n'}
+[1.744396] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_heartbeat_s.c\n'}
+[1.744483] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_wheel_speeds_stamped_s.c\n'}
+[1.744565] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_can_state_s.c\n'}
+[1.744656] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_full_state.py\n'}
+[1.744753] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_ekf_err.py\n'}
+[1.744850] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_runstop_s.c\n'}
+[1.744948] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_node_state.py\n'}
+[1.745044] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_path_integral_status_s.c\n'}
+[1.745199] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_vehicle_commands_stamped_s.c\n'}
+[1.745296] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_slam_state.py\n'}
+[1.745381] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_vehicle_commands.py\n'}
+[1.745463] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_costmap_s.c\n'}
+[1.745546] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_costmap.py\n'}
+[1.745628] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_car_state_s.c\n'}
+[1.745718] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_point_array.py\n'}
+[1.745802] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_cone_array_with_covariance.py\n'}
+[1.745889] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_full_state_s.c\n'}
+[1.745979] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_path_integral_timing.py\n'}
+[1.746071] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_point_array_stamped.py\n'}
+[1.746154] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_node_state_array.py\n'}
+[1.746236] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_vehicle_commands_stamped.py\n'}
+[1.746316] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_waypoint_array_stamped_s.c\n'}
+[1.746396] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_car_state.py\n'}
+[1.746729] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_topic_status.py\n'}
+[1.746981] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_cone_array_s.c\n'}
+[1.747126] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_system_status_s.c\n'}
+[1.747309] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_wheel_speeds_s.c\n'}
+[1.747409] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_state_machine_state_s.c\n'}
+[1.747484] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_waypoint_s.c\n'}
+[1.747555] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_waypoint_array_stamped.py\n'}
+[1.751745] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_ekf_state.py\n'}
+[1.751940] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_bounding_boxes.py\n'}
+[1.752071] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_vehicle_commands_s.c\n'}
+[1.752159] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_node_state_s.c\n'}
+[1.752241] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_bounding_box_s.c\n'}
+[1.752321] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_wheel_odometry_err_s.c\n'}
+[1.752401] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_chassis_command_s.c\n'}
+[1.752480] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_lap_stats_s.c\n'}
+[1.752559] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_path_integral_status.py\n'}
+[1.752647] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_integration_err_s.c\n'}
+[1.752737] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_state_machine_state.py\n'}
+[1.752818] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_cone_array.py\n'}
+[1.752902] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_ekf_state_s.c\n'}
+[1.752997] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_runstop.py\n'}
+[1.753091] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_chassis_state.py\n'}
+[1.753177] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_can_state.py\n'}
+[1.753264] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_path_integral_params_s.c\n'}
+[1.753356] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/__init__.py\n'}
+[1.753442] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_slam_err_s.c\n'}
+[1.753530] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_wheel_speeds.py\n'}
+[1.753621] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_point_array_stamped_s.c\n'}
+[1.753715] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_slam_state_s.c\n'}
+[1.753807] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_bounding_boxes_s.c\n'}
+[1.753896] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_integration_err.py\n'}
+[1.753993] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_chassis_command.py\n'}
+[1.754083] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/msg/_chassis_state_s.c\n'}
+[1.754182] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/action\n'}
+[1.754273] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/action/_check_for_objects.py\n'}
+[1.754390] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/action/_check_for_objects_s.c\n'}
+[1.754616] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/action/__init__.py\n'}
+[1.754714] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/srv\n'}
+[1.754808] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/srv/_set_can_state_s.c\n'}
+[1.754923] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/srv/_register_s.c\n'}
+[1.755016] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/srv/_register.py\n'}
+[1.755107] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/srv/_set_can_state.py\n'}
+[1.755348] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/srv/__init__.py\n'}
+[1.755454] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/eufs_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.755613] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/eufs_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.755729] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages/eufs_msgs/eufs_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[1.755886] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/lib/libeufs_msgs__python.so\n'}
+[1.756078] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/BoundingBox.idl\n'}
+[1.756534] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/BoundingBoxes.idl\n'}
+[1.756758] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/CanState.idl\n'}
+[1.756918] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/CarState.idl\n'}
+[1.757064] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ChassisCommand.idl\n'}
+[1.757621] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ChassisState.idl\n'}
+[1.758067] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ConeArray.idl\n'}
+[1.758200] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ConeArrayWithCovariance.idl\n'}
+[1.758360] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ConeWithCovariance.idl\n'}
+[1.758523] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/Costmap.idl\n'}
+[1.758700] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/EKFErr.idl\n'}
+[1.759318] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/EKFState.idl\n'}
+[1.759457] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/FullState.idl\n'}
+[1.759585] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/Heartbeat.idl\n'}
+[1.759703] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/IntegrationErr.idl\n'}
+[1.759825] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/LapStats.idl\n'}
+[1.759979] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/NodeState.idl\n'}
+[1.760196] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/NodeStateArray.idl\n'}
+[1.760355] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PathIntegralParams.idl\n'}
+[1.760508] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PathIntegralStats.idl\n'}
+[1.760634] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PathIntegralStatus.idl\n'}
+[1.761057] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PathIntegralTiming.idl\n'}
+[1.761246] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PointArray.idl\n'}
+[1.761394] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PointArrayStamped.idl\n'}
+[1.761519] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/Runstop.idl\n'}
+[1.762255] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/SLAMErr.idl\n'}
+[1.762418] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/SLAMState.idl\n'}
+[1.764873] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/StateMachineState.idl\n'}
+[1.765303] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/SystemStatus.idl\n'}
+[1.765393] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/TopicStatus.idl\n'}
+[1.765466] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/VehicleCommands.idl\n'}
+[1.765532] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/VehicleCommandsStamped.idl\n'}
+[1.765599] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/Waypoint.idl\n'}
+[1.765711] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/WaypointArrayStamped.idl\n'}
+[1.765795] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/WheelOdometryErr.idl\n'}
+[1.765865] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/WheelSpeeds.idl\n'}
+[1.765932] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/WheelSpeedsStamped.idl\n'}
+[1.765998] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/action/CheckForObjects.idl\n'}
+[1.766064] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/srv/Register.idl\n'}
+[1.766204] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/srv/SetCanState.idl\n'}
+[1.766294] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/BoundingBox.msg\n'}
+[1.766362] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/BoundingBoxes.msg\n'}
+[1.767043] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/CanState.msg\n'}
+[1.767187] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/CarState.msg\n'}
+[1.767355] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ChassisCommand.msg\n'}
+[1.767461] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ChassisState.msg\n'}
+[1.767577] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ConeArray.msg\n'}
+[1.767711] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ConeArrayWithCovariance.msg\n'}
+[1.768053] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/ConeWithCovariance.msg\n'}
+[1.768433] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/Costmap.msg\n'}
+[1.768620] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/EKFErr.msg\n'}
+[1.771306] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/EKFState.msg\n'}
+[1.772397] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/FullState.msg\n'}
+[1.772516] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/Heartbeat.msg\n'}
+[1.772599] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/IntegrationErr.msg\n'}
+[1.772680] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/LapStats.msg\n'}
+[1.772759] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/NodeState.msg\n'}
+[1.772834] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/NodeStateArray.msg\n'}
+[1.772917] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PathIntegralParams.msg\n'}
+[1.772994] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PathIntegralStats.msg\n'}
+[1.773069] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PathIntegralStatus.msg\n'}
+[1.773147] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PathIntegralTiming.msg\n'}
+[1.773227] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PointArray.msg\n'}
+[1.773302] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/PointArrayStamped.msg\n'}
+[1.773418] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/Runstop.msg\n'}
+[1.773496] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/SLAMErr.msg\n'}
+[1.773573] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/SLAMState.msg\n'}
+[1.773652] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/StateMachineState.msg\n'}
+[1.773725] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/SystemStatus.msg\n'}
+[1.773800] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/TopicStatus.msg\n'}
+[1.773881] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/VehicleCommands.msg\n'}
+[1.773955] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/VehicleCommandsStamped.msg\n'}
+[1.774038] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/Waypoint.msg\n'}
+[1.774113] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/WaypointArrayStamped.msg\n'}
+[1.774191] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/WheelOdometryErr.msg\n'}
+[1.774277] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/WheelSpeeds.msg\n'}
+[1.774370] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/msg/WheelSpeedsStamped.msg\n'}
+[1.774577] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/action/CheckForObjects.action\n'}
+[1.774662] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/srv/Register.srv\n'}
+[1.774722] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/srv/Register_Request.msg\n'}
+[1.774777] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/srv/Register_Response.msg\n'}
+[1.774831] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/srv/SetCanState.srv\n'}
+[1.774882] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/srv/SetCanState_Request.msg\n'}
+[1.774933] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/srv/SetCanState_Response.msg\n'}
+[1.774984] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/ament_index/resource_index/package_run_dependencies/eufs_msgs\n'}
+[1.775036] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/ament_index/resource_index/parent_prefix_path/eufs_msgs\n'}
+[1.775087] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/environment/ament_prefix_path.sh\n'}
+[1.775140] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/environment/ament_prefix_path.dsv\n'}
+[1.775191] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/environment/path.sh\n'}
+[1.775243] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/environment/path.dsv\n'}
+[1.775295] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/local_setup.bash\n'}
+[1.775347] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/local_setup.sh\n'}
+[1.775397] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/local_setup.zsh\n'}
+[1.775447] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/local_setup.dsv\n'}
+[1.775497] (eufs_msgs) StdoutLine: {'line': b'-- Installing: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/package.dsv\n'}
+[1.775548] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/ament_index/resource_index/packages/eufs_msgs\n'}
+[1.775598] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_generator_cExport.cmake\n'}
+[1.775647] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.775698] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.775749] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.775801] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_typesupport_cExport.cmake\n'}
+[1.775852] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.775903] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_generator_cppExport.cmake\n'}
+[1.775962] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.776013] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.776067] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[1.776118] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.776168] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.776217] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.776276] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.776327] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.776378] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.776428] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.776478] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.776529] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgsConfig.cmake\n'}
+[1.776580] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/cmake/eufs_msgsConfig-version.cmake\n'}
+[1.776631] (eufs_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/autocar/install/eufs_msgs/share/eufs_msgs/package.xml\n'}
+[1.776682] (eufs_msgs) CommandEnded: {'returncode': 0}
+[1.821421] (-) TimerEvent: {}
+[1.922024] (-) TimerEvent: {}
+[2.022715] (-) TimerEvent: {}
+[2.130644] (-) TimerEvent: {}
+[2.236979] (-) TimerEvent: {}
+[2.337688] (-) TimerEvent: {}
+[2.438320] (-) TimerEvent: {}
+[2.545013] (-) TimerEvent: {}
+[2.647892] (-) TimerEvent: {}
+[2.749988] (-) TimerEvent: {}
+[2.850633] (-) TimerEvent: {}
+[2.951222] (-) TimerEvent: {}
+[3.024307] (eufs_msgs) JobEnded: {'identifier': 'eufs_msgs', 'rc': 0}
+[3.026198] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[3.051487] (-) TimerEvent: {}
+[3.152130] (-) TimerEvent: {}
+[3.252819] (-) TimerEvent: {}
+[3.354798] (-) TimerEvent: {}
+[3.460555] (-) TimerEvent: {}
+[3.560889] (-) TimerEvent: {}
+[3.661302] (-) TimerEvent: {}
+[3.761672] (-) TimerEvent: {}
+[3.862028] (-) TimerEvent: {}
+[3.962398] (-) TimerEvent: {}
+[4.062828] (-) TimerEvent: {}
+[4.152239] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/vboxuser/autocar/build/py_pubsub/build', 'install', '--record', '/home/vboxuser/autocar/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/vboxuser/autocar/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'vboxuser', 'SSH_AGENT_PID': '1693', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/vboxuser/autocar/install/eufs_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib:/home/vboxuser/autocar/install/turtlesim/lib', 'HOME': '/home/vboxuser', 'OLDPWD': '/home/vboxuser/autocar/src/eufs_msgs', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1480', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/vboxuser/autocar/install', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'vboxuser', 'JOURNAL_STREAM': '8:41153', 'EUFS_MASTER': '/home/vboxuser/sim', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'vboxuser', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/sim:@/tmp/.ICE-unix/1763,unix/sim:/tmp/.ICE-unix/1763', 'INVOCATION_ID': '85769383a54e40b0a3099068e016c239', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f7f12fbd_d227_422a_b2ed_f6103774822a', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.107', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/vboxuser/autocar/install/eufs_msgs:/opt/ros/galactic:/home/vboxuser/autocar/install/turtlesim:/home/vboxuser/autocar/install/py_pubsub:/home/vboxuser/autocar/install/my_package', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/vboxuser/autocar/build/py_pubsub', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/vboxuser/autocar/build/py_pubsub/prefix_override:/home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages:/home/vboxuser/autocar/install/eufs_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages:/home/vboxuser/autocar/install/turtlesim/lib/python3.8/site-packages:/home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages:/home/vboxuser/autocar/install/my_package/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/vboxuser/autocar/install/eufs_msgs:/home/vboxuser/autocar/install/turtlesim'}, 'shell': False}
+[4.163998] (-) TimerEvent: {}
+[4.267664] (-) TimerEvent: {}
+[4.368084] (-) TimerEvent: {}
+[4.468505] (-) TimerEvent: {}
+[4.509064] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[4.515011] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[4.515469] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[4.515588] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[4.515755] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[4.515843] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[4.568690] (-) TimerEvent: {}
+[4.577126] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[4.577870] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[4.578144] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[4.578288] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[4.578453] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/cmd_subscriber_function.py -> /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub\n'}
+[4.578735] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[4.579741] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[4.581092] (py_pubsub) StdoutLine: {'line': b'copying /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub/cmd_subscriber_function.py -> /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[4.582699] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/cmd_subscriber_function.py to cmd_subscriber_function.cpython-38.pyc\n'}
+[4.589673] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[4.590154] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.590428] (py_pubsub) StdoutLine: {'line': b"removing '/home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.590622] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info\n'}
+[4.590770] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[4.608117] (py_pubsub) StdoutLine: {'line': b'Installing cmd_listener script to /home/vboxuser/autocar/install/py_pubsub/lib/py_pubsub\n'}
+[4.608338] (py_pubsub) StdoutLine: {'line': b'Installing cone_listener script to /home/vboxuser/autocar/install/py_pubsub/lib/py_pubsub\n'}
+[4.608633] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/vboxuser/autocar/install/py_pubsub/lib/py_pubsub\n'}
+[4.608888] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/vboxuser/autocar/build/py_pubsub/install.log'\n"}
+[4.667668] (py_pubsub) CommandEnded: {'returncode': 0}
+[4.672471] (-) TimerEvent: {}
+[4.688115] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[4.689106] (-) EventReactorShutdown: {}

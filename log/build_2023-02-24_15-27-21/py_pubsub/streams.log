@@ -1,0 +1,41 @@
+[0.751s] Invoking command in '/home/vboxuser/autocar/src/py_pubsub': PYTHONPATH=/home/vboxuser/autocar/build/py_pubsub/prefix_override:/home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/vboxuser/autocar/build/py_pubsub/build install --record /home/vboxuser/autocar/build/py_pubsub/install.log --single-version-externally-managed
+[0.948s] running egg_info
+[0.949s] creating ../../build/py_pubsub/py_pubsub.egg-info
+[0.950s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[0.950s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[0.950s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[0.950s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[0.950s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[0.951s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.977s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.977s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.977s] running build
+[0.977s] running build_py
+[0.977s] creating /home/vboxuser/autocar/build/py_pubsub/build
+[0.978s] creating /home/vboxuser/autocar/build/py_pubsub/build/lib
+[0.978s] creating /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub
+[0.978s] copying py_pubsub/publisher_member_function.py -> /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub
+[0.979s] copying py_pubsub/subscriber_member_function.py -> /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub
+[0.979s] copying py_pubsub/__init__.py -> /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub
+[0.979s] running install
+[0.979s] running install_lib
+[0.980s] creating /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[0.981s] copying /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[0.981s] copying /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[0.981s] copying /home/vboxuser/autocar/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[0.981s] byte-compiling /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[0.981s] byte-compiling /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc
+[0.982s] byte-compiling /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/__init__.py to __init__.cpython-38.pyc
+[0.982s] running install_data
+[0.982s] creating /home/vboxuser/autocar/install/py_pubsub/share/ament_index
+[0.982s] creating /home/vboxuser/autocar/install/py_pubsub/share/ament_index/resource_index
+[0.982s] creating /home/vboxuser/autocar/install/py_pubsub/share/ament_index/resource_index/packages
+[0.982s] copying resource/py_pubsub -> /home/vboxuser/autocar/install/py_pubsub/share/ament_index/resource_index/packages
+[0.982s] copying package.xml -> /home/vboxuser/autocar/install/py_pubsub/share/py_pubsub
+[0.982s] running install_egg_info
+[0.984s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[0.984s] running install_scripts
+[0.996s] Installing listener script to /home/vboxuser/autocar/install/py_pubsub/lib/py_pubsub
+[0.997s] Installing talker script to /home/vboxuser/autocar/install/py_pubsub/lib/py_pubsub
+[0.998s] writing list of installed files to '/home/vboxuser/autocar/build/py_pubsub/install.log'
+[1.017s] Invoked command in '/home/vboxuser/autocar/src/py_pubsub' returned '0': PYTHONPATH=/home/vboxuser/autocar/build/py_pubsub/prefix_override:/home/vboxuser/autocar/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/vboxuser/autocar/build/py_pubsub/build install --record /home/vboxuser/autocar/build/py_pubsub/install.log --single-version-externally-managed
