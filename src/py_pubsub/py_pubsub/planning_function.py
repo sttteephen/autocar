@@ -44,6 +44,16 @@ class Planner(Node):
         print(midpoints)
 
         # this stuff just maps with plt
+        # sort arrays by distance
+        yellow_cones = sorted(
+                yellow_cones, 
+                key=lambda x: x[1]
+            )
+
+        blue_cones = sorted(
+                blue_cones, 
+                key=lambda x: x[1]
+            )
 
         self.map_cones(blue_cones, yellow_cones, midpoints)
 
