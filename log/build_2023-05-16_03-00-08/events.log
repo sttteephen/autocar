@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000270] (-) JobUnselected: {'identifier': 'eufs_msgs'}
+[0.000305] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.000755] (-) EventReactorShutdown: {}

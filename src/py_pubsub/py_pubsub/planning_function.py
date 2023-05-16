@@ -7,6 +7,7 @@ from geometry_msgs.msg import Point
 from eufs_msgs.msg import WaypointArrayStamped, Waypoint, ConeArrayWithCovariance, CarState, ConeWithCovariance
 import numpy as np
 from math import sqrt, asin, degrees
+from matplotlib import pyplot as plt
 
 
 class Planner(Node):
@@ -33,11 +34,18 @@ class Planner(Node):
         # loop over every visible cone
         blue_cones = self.convert(msg.blue_cones)
         yellow_cones = self.convert(msg.yellow_cones)
-        #print("lovely blu cones ", blue_cones, "yelly cones ", yellow_cones)
         #orange_cones = np.concatenate(self.convert(msg.orange_cones), self.convert(msg.big_orange_cones))
 
         midpoints = self.find_midpoints(blue_cones, yellow_cones)#, orange_cones)
         midpoints = self.sort_midpoints(midpoints)
+
+        print(blue_cones)
+        print(yellow_cones)
+        print(midpoints)
+
+        # this stuff just maps with plt
+
+        self.map_cones(blue_cones, yellow_cones, midpoints)
 
         #self.get_logger().info(msg)
 
@@ -58,6 +66,7 @@ class Planner(Node):
 
         yellow_with_distance = []
         blue_with_distance = []
+        midpoints = []
 
         # calculate distance of cones
         for p in yellow_cones:
@@ -77,16 +86,41 @@ class Planner(Node):
             )
 
         blue_with_distance = sorted(
-                yellow_with_distance, 
+                blue_with_distance, 
                 key=lambda x: x[1]
             )
         
         #print(yellow_with_distance, blue_with_distance)
+        midpoints_count = 1
+        if len(yellow_with_distance) < len(blue_with_distance):
+            for i in range(len(yellow_with_distance)-1):
+                midpoints_count += 2
+        else:
+            for i in range(len(blue_with_distance)-1):
+                midpoints_count += 2
+        print(midpoints_count)
+            
+        increment_blue = False
+        blue_index = 0
+        yellow_index = 0
 
-        
+        for i in range(midpoints_count):
+            bx = blue_with_distance[blue_index][0][0]
+            yx = yellow_with_distance[yellow_index][0][0]
+            by = blue_with_distance[blue_index][0][1]
+            yy = yellow_with_distance[yellow_index][0][1]
+            midpoint = ((bx+yx)/2, (by+yy)/2)
 
+            midpoints.append(midpoint)
+            #print(blue_with_distance[blue_index], yellow_with_distance[yellow_index], midpoint)
+            if increment_blue:
+                blue_index += 1
+            else:
+                yellow_index += 1
 
-        return [(1,1)]
+            increment_blue = (not increment_blue)
+
+        return midpoints
 
     def sort_midpoints(self, midpoints):
         """
@@ -110,6 +144,30 @@ class Planner(Node):
             return np.array([p.point.x + 1j * p.point.y for p in cones])
         else:
             return np.array([[p.point.x, p.point.y] for p in cones])
+        
+        # produces a 2D map based on current stored cone coordinates
+    def map_cones(self, b, y, m):
+        plt.rcParams["figure.figsize"] = [7.00, 3.50]
+        plt.rcParams["figure.autolayout"] = True
+        plt.xlim(-2, 20)
+        plt.ylim(-8, 8)
+        plt.grid()
+        plt.plot([i[0] for i in b], [i[1] for i in b], marker="o", markersize=10, markeredgecolor="red", markerfacecolor="blue")
+        plt.plot([i[0] for i in y], [i[1] for i in y], marker="o", markersize=10, markeredgecolor="red", markerfacecolor="yellow")
+        plt.plot([i[0] for i in m], [i[1] for i in m], marker="X", markersize=10, markeredgecolor="red", markerfacecolor="green")
+        plt.plot([0], [0], marker=">", markersize=10, markeredgecolor="red", markerfacecolor="green")
+        plt.show()
+    
+    # get distance and angle from car from cone points
+    def parse_cone_data(self, cone):
+        distance = sqrt(cone.point.x**2 + cone.point.y**2)
+        angle = 90 - degrees(asin(abs(cone.point.y) / distance))
+
+        # convery cones to cars left to negative angles
+        if cone.point.y > 0:
+            angle = -angle
+
+        return (cone.point.x, cone.point.y, distance, angle)
 
 
 def main(args=None):
