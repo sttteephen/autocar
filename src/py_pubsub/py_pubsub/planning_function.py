@@ -33,7 +33,7 @@ class Planner(Node):
         # loop over every visible cone
         blue_cones = self.convert(msg.blue_cones)
         yellow_cones = self.convert(msg.yellow_cones)
-        print("lovely blu cones ", blue_cones, "yelly cones ", yellow_cones)
+        #print("lovely blu cones ", blue_cones, "yelly cones ", yellow_cones)
         #orange_cones = np.concatenate(self.convert(msg.orange_cones), self.convert(msg.big_orange_cones))
 
         midpoints = self.find_midpoints(blue_cones, yellow_cones)#, orange_cones)
@@ -55,18 +55,35 @@ class Planner(Node):
         self.track_line_pub.publish(waypoint_array)
 
     def find_midpoints(self, blue_cones, yellow_cones):#, orange_cones):
-        """
-        IMPLEMENT YOURSELF
-        Find the midpoints along the track
-        :param blue_cones: cone positions
-        :param yellow_cones:
-        :param orange_cones:
-        :return: list of midpoints
-        """
-        yellow_with_distanct = []
 
+        yellow_with_distance = []
+        blue_with_distance = []
+
+        # calculate distance of cones
         for p in yellow_cones:
-            distance = sqrt(cone.point.x**2 + cone.point.y**2)
+            distance = sqrt(p[0]**2 + p[1]**2)
+            yellow_with_distance.append((p, distance))
+            #print(p, distance)
+
+        for p in blue_cones:
+            distance = sqrt(p[0]**2 + p[1]**2)
+            blue_with_distance.append((p, distance))
+            #print(p, distance)
+
+        # sort arrays by distance
+        yellow_with_distance = sorted(
+                yellow_with_distance, 
+                key=lambda x: x[1]
+            )
+
+        blue_with_distance = sorted(
+                yellow_with_distance, 
+                key=lambda x: x[1]
+            )
+        
+        #print(yellow_with_distance, blue_with_distance)
+
+        
 
 
         return [(1,1)]
