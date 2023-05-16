@@ -44,8 +44,8 @@ class ConeSubscriber(Node):
                         key=lambda x: x[2]
                     )
 
-        self.write_cones(cones_array)
-        #print(cones_array)
+        #self.write_cones(cones_array)
+        print(cones_array)
         #self.get_logger().info(msg)
         #self.map_cones()
 
