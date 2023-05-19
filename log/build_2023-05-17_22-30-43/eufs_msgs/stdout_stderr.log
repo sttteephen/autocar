@@ -1,0 +1,36 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found std_msgs: 2.2.4 (/opt/ros/galactic/share/std_msgs/cmake)
+-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/autocar/build/eufs_msgs
+[  0%] Built target eufs_msgs__cpp
+[ 12%] Built target eufs_msgs__rosidl_generator_c
+[ 25%] Built target eufs_msgs__rosidl_typesupport_introspection_cpp
+[ 38%] Built target eufs_msgs__rosidl_typesupport_c
+[ 57%] Built target eufs_msgs__rosidl_typesupport_cpp
+[ 63%] Built target eufs_msgs__rosidl_typesupport_introspection_c
+[ 63%] [32m[1mLinking CXX shared library libeufs_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 75%] Built target eufs_msgs__rosidl_typesupport_fastrtps_cpp
+[ 76%] [32m[1mLinking CXX shared library libeufs_msgs__rosidl_typesupport_fastrtps_c.so[0m
+make[2]: *** Deleting file 'libeufs_msgs__rosidl_typesupport_fastrtps_c.so'
+make[2]: *** [CMakeFiles/eufs_msgs__rosidl_typesupport_fastrtps_c.dir/build.make:1112: libeufs_msgs__rosidl_typesupport_fastrtps_c.so] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/eufs_msgs__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

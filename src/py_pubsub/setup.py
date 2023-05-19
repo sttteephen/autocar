@@ -23,7 +23,8 @@ setup(
             'talker = py_pubsub.publisher_member_function:main',
             'cmd_listener = py_pubsub.cmd_subscriber_function:main',
             'cone_listener = py_pubsub.cone_subscriber_function:main',
-            'planner = py_pubsub.planning_function:main'
+            'planner = py_pubsub.planning_function:main',
+            'control = py_pubsub.control_function:main'
         ],
     },
 )

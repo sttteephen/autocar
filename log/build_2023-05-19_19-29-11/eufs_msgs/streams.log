@@ -1,0 +1,24 @@
+[0.117s] Invoking command in '/home/vboxuser/autocar/build/eufs_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/autocar/install/py_pubsub:/home/vboxuser/autocar/install/my_package:/home/vboxuser/sim/install/eufs_launcher:/home/vboxuser/sim/install/eufs_tracks:/home/vboxuser/sim/install/eufs_rqt:/home/vboxuser/sim/install/eufs_racecar:/opt/ros/galactic /usr/bin/cmake --build /home/vboxuser/autocar/build/eufs_msgs -- -j8 -l8
+[1.210s] [  0%] Built target eufs_msgs__cpp
+[1.537s] [ 12%] Built target eufs_msgs__rosidl_typesupport_cpp
+[1.540s] [ 24%] Built target eufs_msgs__rosidl_generator_c
+[1.701s] [ 36%] Built target eufs_msgs__rosidl_typesupport_fastrtps_cpp
+[1.866s] [ 49%] Built target eufs_msgs__rosidl_typesupport_c
+[1.924s] [ 62%] Built target eufs_msgs__rosidl_typesupport_introspection_c
+[1.925s] [ 75%] Built target eufs_msgs__rosidl_typesupport_introspection_cpp
+[2.025s] [ 76%] [32m[1mLinking CXX shared library libeufs_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.229s] [ 88%] Built target eufs_msgs__rosidl_typesupport_fastrtps_c
+[3.288s] [ 88%] Built target eufs_msgs
+[3.351s] [ 88%] Built target eufs_msgs__py
+[3.436s] [35m[1mScanning dependencies of target eufs_msgs__python[0m
+[3.717s] [ 88%] [32mBuilding C object CMakeFiles/eufs_msgs__python.dir/rosidl_generator_py/eufs_msgs/msg/_bounding_box_s.c.o[0m
+[5.683s] [ 88%] [32mBuilding C object CMakeFiles/eufs_msgs__python.dir/rosidl_generator_py/eufs_msgs/msg/_cone_array_with_covariance_s.c.o[0m
+[5.893s] [ 89%] [32mBuilding C object CMakeFiles/eufs_msgs__python.dir/rosidl_generator_py/eufs_msgs/msg/_cone_with_covariance_s.c.o[0m
+[6.057s] [ 89%] [32mBuilding C object CMakeFiles/eufs_msgs__python.dir/rosidl_generator_py/eufs_msgs/msg/_costmap_s.c.o[0m
+[6.188s] [ 89%] [32mBuilding C object CMakeFiles/eufs_msgs__python.dir/rosidl_generator_py/eufs_msgs/msg/_ekf_err_s.c.o[0m
+[6.343s] [ 90%] [32mBuilding C object CMakeFiles/eufs_msgs__python.dir/rosidl_generator_py/eufs_msgs/msg/_ekf_state_s.c.o[0m
+[6.461s] [ 90%] [32mBuilding C object CMakeFiles/eufs_msgs__python.dir/rosidl_generator_py/eufs_msgs/msg/_full_state_s.c.o[0m
+[6.547s] make[2]: *** [CMakeFiles/eufs_msgs__python.dir/build.make:219: CMakeFiles/eufs_msgs__python.dir/rosidl_generator_py/eufs_msgs/msg/_full_state_s.c.o] Interrupt
+[6.551s] make[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/eufs_msgs__python.dir/all] Interrupt
+[6.551s] make: *** [Makefile:141: all] Interrupt
+[6.605s] Invoked command in '/home/vboxuser/autocar/build/eufs_msgs' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/autocar/install/py_pubsub:/home/vboxuser/autocar/install/my_package:/home/vboxuser/sim/install/eufs_launcher:/home/vboxuser/sim/install/eufs_tracks:/home/vboxuser/sim/install/eufs_rqt:/home/vboxuser/sim/install/eufs_racecar:/opt/ros/galactic /usr/bin/cmake --build /home/vboxuser/autocar/build/eufs_msgs -- -j8 -l8

@@ -39,9 +39,9 @@ class Planner(Node):
         midpoints = self.find_midpoints(blue_cones, yellow_cones)#, orange_cones)
         midpoints = self.sort_midpoints(midpoints)
 
-        print(blue_cones)
-        print(yellow_cones)
-        print(midpoints)
+        #print(blue_cones)
+        #print(yellow_cones)
+        #print(midpoints)
 
         # this stuff just maps with plt
         # sort arrays by distance
@@ -56,7 +56,7 @@ class Planner(Node):
             )
 
         self.map_cones(blue_cones, yellow_cones, midpoints)
-
+        self.publish_path(midpoints)
         #self.get_logger().info(msg)
 
 
@@ -71,6 +71,7 @@ class Planner(Node):
             waypoint_array.waypoints.append(waypoint)
 
         self.track_line_pub.publish(waypoint_array)
+        print(waypoint_array)
 
     def find_midpoints(self, blue_cones, yellow_cones):#, orange_cones):
 
@@ -108,7 +109,7 @@ class Planner(Node):
         else:
             for i in range(len(blue_with_distance)-1):
                 midpoints_count += 2
-        print(midpoints_count)
+        #print(midpoints_count)
             
         increment_blue = False
         blue_index = 0

@@ -1,0 +1,4 @@
+make[2]: *** Deleting file 'libeufs_msgs__rosidl_typesupport_fastrtps_c.so'
+make[2]: *** [CMakeFiles/eufs_msgs__rosidl_typesupport_fastrtps_c.dir/build.make:1112: libeufs_msgs__rosidl_typesupport_fastrtps_c.so] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/eufs_msgs__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

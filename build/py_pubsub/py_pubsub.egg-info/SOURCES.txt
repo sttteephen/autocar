@@ -11,6 +11,7 @@ setup.py
 py_pubsub/__init__.py
 py_pubsub/cmd_subscriber_function.py
 py_pubsub/cone_subscriber_function.py
+py_pubsub/control_function.py
 py_pubsub/planning_function.py
 py_pubsub/publisher_member_function.py
 py_pubsub.egg-info/PKG-INFO
