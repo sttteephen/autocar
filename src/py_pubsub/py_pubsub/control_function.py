@@ -145,6 +145,7 @@ class Control(Node):
         msg.drive.acceleration = acceleration
 
         self.comand_pub.publish(msg)
+        print(msg)
 
 
 

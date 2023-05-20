@@ -3,7 +3,8 @@
 '''
 This node listens to the /ground_truth/cones topic for a ConeArrayWithCovariance msg.
 Currently it just handles blue and yellow cones.
-The node publishes to the /trajectory topic an array of midpoint as a WaypointArrayStamped msg.
+It claculates midpoints between the blue and yellow cones.
+The node publishes to the /trajectory topic an array of midpoints as a WaypointArrayStamped msg.
 '''
 import rclpy
 from rclpy.node import Node
@@ -41,20 +42,13 @@ class Planner(Node):
         #orange_cones = np.concatenate(self.convert(msg.orange_cones), self.convert(msg.big_orange_cones))
 
         midpoints = self.find_midpoints(blue_cones, yellow_cones)#, orange_cones)
-        midpoints = self.sort_midpoints(midpoints)
+        #midpoints = self.sort_midpoints(midpoints)
 
-        # sort arrays by distance
-        yellow_cones = sorted(
-                yellow_cones, 
-                key=lambda x: x[1]
-            )
-
-        blue_cones = sorted(
-                blue_cones, 
-                key=lambda x: x[1]
-            )
-
+        # uncomment  these lines for the matplotlib visualization
+        #yellow_cones = sorted(yellow_cones, key=lambda x: x[1])
+        #blue_cones = sorted(blue_cones, key=lambda x: x[1])
         #self.map_cones(blue_cones, yellow_cones, midpoints)
+
         self.publish_path(midpoints)
 
 
@@ -71,22 +65,24 @@ class Planner(Node):
         self.track_line_pub.publish(waypoint_array)
         print(waypoint_array)
 
+
     def find_midpoints(self, blue_cones, yellow_cones):#, orange_cones):
 
         yellow_with_distance = []
         blue_with_distance = []
         midpoints = []
+
+        # this try block assumes cones of both colours are visilbe
+        # and any error is because there are no visible cones of one colour - pretty jank
         try:
             # calculate distance of cones
             for p in yellow_cones:
                 distance = sqrt(p[0]**2 + p[1]**2)
                 yellow_with_distance.append((p, distance))
-                #print(p, distance)
 
             for p in blue_cones:
                 distance = sqrt(p[0]**2 + p[1]**2)
                 blue_with_distance.append((p, distance))
-                #print(p, distance)
 
             # sort arrays by distance
             yellow_with_distance = sorted(
@@ -99,7 +95,9 @@ class Planner(Node):
                     key=lambda x: x[1]
                 )
             
-            #print(yellow_with_distance, blue_with_distance)
+
+            # calculates how many midpoint there should be based based on the length of the smaller cone array,
+            # for the first cone there will be 1 midpoint and every additional cone adds two midpoints
             midpoints_count = 1
             if len(yellow_with_distance) < len(blue_with_distance):
                 for i in range(len(yellow_with_distance)-1):
@@ -107,31 +105,37 @@ class Planner(Node):
             else:
                 for i in range(len(blue_with_distance)-1):
                     midpoints_count += 2
-            #print(midpoints_count)
-                
+            
+
             increment_blue = False
             blue_index = 0
             yellow_index = 0
 
+            # move through the arrays finding midpoints
             for i in range(midpoints_count):
-                bx = blue_with_distance[blue_index][0][0]
-                yx = yellow_with_distance[yellow_index][0][0]
-                by = blue_with_distance[blue_index][0][1]
-                yy = yellow_with_distance[yellow_index][0][1]
-                midpoint = ((bx+yx)/2, (by+yy)/2)
-
+                # get the xy of a blue and a yellow cone
+                bluex = blue_with_distance[blue_index][0][0]
+                yellowx = yellow_with_distance[yellow_index][0][0]
+                bluey = blue_with_distance[blue_index][0][1]
+                yellowy = yellow_with_distance[yellow_index][0][1]
+                # find midpoint 
+                midpoint = ((bluex+yellowx)/2, (bluey+yellowy)/2)
                 midpoints.append(midpoint)
-                #print(blue_with_distance[blue_index], yellow_with_distance[yellow_index], midpoint)
+
+                # increment either the blue or yellow array
                 if increment_blue:
                     blue_index += 1
                 else:
                     yellow_index += 1
-
-                increment_blue = (not increment_blue)
+                # increment the other array next iteration
+                increment_blue = (not increment_blue)  
+        
+        # if it fails an empty array will be returned
         except:
             pass
 
         return midpoints
+
 
     # midpoints should already be sorted I think
     def sort_midpoints(self, midpoints):
@@ -157,6 +161,7 @@ class Planner(Node):
         else:
             return np.array([[p.point.x, p.point.y] for p in cones])
         
+
     # produces a 2D map based on current stored cone coordinates, this will halt the program until the map is closed
     def map_cones(self, b, y, m):
         plt.rcParams["figure.figsize"] = [7.00, 3.50]
