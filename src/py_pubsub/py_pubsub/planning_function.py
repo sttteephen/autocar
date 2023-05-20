@@ -1,6 +1,10 @@
 # listens to the /ground_truth/cones topic
 # records positions of currently visible cones
-
+'''
+This node listens to the /ground_truth/cones topic for a ConeArrayWithCovariance msg.
+Currently it just handles blue and yellow cones.
+The node publishes to the /trajectory topic an array of midpoint as a WaypointArrayStamped msg.
+'''
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Point
@@ -39,11 +43,6 @@ class Planner(Node):
         midpoints = self.find_midpoints(blue_cones, yellow_cones)#, orange_cones)
         midpoints = self.sort_midpoints(midpoints)
 
-        #print(blue_cones)
-        #print(yellow_cones)
-        #print(midpoints)
-
-        # this stuff just maps with plt
         # sort arrays by distance
         yellow_cones = sorted(
                 yellow_cones, 
@@ -55,9 +54,8 @@ class Planner(Node):
                 key=lambda x: x[1]
             )
 
-        self.map_cones(blue_cones, yellow_cones, midpoints)
+        #self.map_cones(blue_cones, yellow_cones, midpoints)
         self.publish_path(midpoints)
-        #self.get_logger().info(msg)
 
 
     def publish_path(self, midpoints):
@@ -78,61 +76,64 @@ class Planner(Node):
         yellow_with_distance = []
         blue_with_distance = []
         midpoints = []
+        try:
+            # calculate distance of cones
+            for p in yellow_cones:
+                distance = sqrt(p[0]**2 + p[1]**2)
+                yellow_with_distance.append((p, distance))
+                #print(p, distance)
 
-        # calculate distance of cones
-        for p in yellow_cones:
-            distance = sqrt(p[0]**2 + p[1]**2)
-            yellow_with_distance.append((p, distance))
-            #print(p, distance)
+            for p in blue_cones:
+                distance = sqrt(p[0]**2 + p[1]**2)
+                blue_with_distance.append((p, distance))
+                #print(p, distance)
 
-        for p in blue_cones:
-            distance = sqrt(p[0]**2 + p[1]**2)
-            blue_with_distance.append((p, distance))
-            #print(p, distance)
+            # sort arrays by distance
+            yellow_with_distance = sorted(
+                    yellow_with_distance, 
+                    key=lambda x: x[1]
+                )
 
-        # sort arrays by distance
-        yellow_with_distance = sorted(
-                yellow_with_distance, 
-                key=lambda x: x[1]
-            )
-
-        blue_with_distance = sorted(
-                blue_with_distance, 
-                key=lambda x: x[1]
-            )
-        
-        #print(yellow_with_distance, blue_with_distance)
-        midpoints_count = 1
-        if len(yellow_with_distance) < len(blue_with_distance):
-            for i in range(len(yellow_with_distance)-1):
-                midpoints_count += 2
-        else:
-            for i in range(len(blue_with_distance)-1):
-                midpoints_count += 2
-        #print(midpoints_count)
+            blue_with_distance = sorted(
+                    blue_with_distance, 
+                    key=lambda x: x[1]
+                )
             
-        increment_blue = False
-        blue_index = 0
-        yellow_index = 0
-
-        for i in range(midpoints_count):
-            bx = blue_with_distance[blue_index][0][0]
-            yx = yellow_with_distance[yellow_index][0][0]
-            by = blue_with_distance[blue_index][0][1]
-            yy = yellow_with_distance[yellow_index][0][1]
-            midpoint = ((bx+yx)/2, (by+yy)/2)
-
-            midpoints.append(midpoint)
-            #print(blue_with_distance[blue_index], yellow_with_distance[yellow_index], midpoint)
-            if increment_blue:
-                blue_index += 1
+            #print(yellow_with_distance, blue_with_distance)
+            midpoints_count = 1
+            if len(yellow_with_distance) < len(blue_with_distance):
+                for i in range(len(yellow_with_distance)-1):
+                    midpoints_count += 2
             else:
-                yellow_index += 1
+                for i in range(len(blue_with_distance)-1):
+                    midpoints_count += 2
+            #print(midpoints_count)
+                
+            increment_blue = False
+            blue_index = 0
+            yellow_index = 0
 
-            increment_blue = (not increment_blue)
+            for i in range(midpoints_count):
+                bx = blue_with_distance[blue_index][0][0]
+                yx = yellow_with_distance[yellow_index][0][0]
+                by = blue_with_distance[blue_index][0][1]
+                yy = yellow_with_distance[yellow_index][0][1]
+                midpoint = ((bx+yx)/2, (by+yy)/2)
+
+                midpoints.append(midpoint)
+                #print(blue_with_distance[blue_index], yellow_with_distance[yellow_index], midpoint)
+                if increment_blue:
+                    blue_index += 1
+                else:
+                    yellow_index += 1
+
+                increment_blue = (not increment_blue)
+        except:
+            pass
 
         return midpoints
 
+    # midpoints should already be sorted I think
     def sort_midpoints(self, midpoints):
         """
         IMPLEMENT YOURSELF
@@ -156,7 +157,7 @@ class Planner(Node):
         else:
             return np.array([[p.point.x, p.point.y] for p in cones])
         
-        # produces a 2D map based on current stored cone coordinates
+    # produces a 2D map based on current stored cone coordinates, this will halt the program until the map is closed
     def map_cones(self, b, y, m):
         plt.rcParams["figure.figsize"] = [7.00, 3.50]
         plt.rcParams["figure.autolayout"] = True
@@ -168,17 +169,6 @@ class Planner(Node):
         plt.plot([i[0] for i in m], [i[1] for i in m], marker="X", markersize=10, markeredgecolor="red", markerfacecolor="green")
         plt.plot([0], [0], marker=">", markersize=10, markeredgecolor="red", markerfacecolor="green")
         plt.show()
-    
-    # get distance and angle from car from cone points
-    def parse_cone_data(self, cone):
-        distance = sqrt(cone.point.x**2 + cone.point.y**2)
-        angle = 90 - degrees(asin(abs(cone.point.y) / distance))
-
-        # convery cones to cars left to negative angles
-        if cone.point.y > 0:
-            angle = -angle
-
-        return (cone.point.x, cone.point.y, distance, angle)
 
 
 def main(args=None):

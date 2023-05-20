@@ -1,18 +1,25 @@
+'''
+This node listens to the /trajetory topic for a midpoint array.
+It chooses a midpoint from this array to aim for and calculates the desired steering angle.
+Currently the node tries to maintain a slows speed.
+It publishes AckermannDriveStamped msgs on the /cmd topic with steering angle and acceleration commands.
+'''
+
 from eufs_msgs.msg import WaypointArrayStamped, CarState
 from ackermann_msgs.msg import AckermannDriveStamped
 from visualization_msgs.msg import Marker
 import rclpy
 from rclpy.node import Node
-from math import sqrt, asin, degrees, atan, sin
-
+from math import sqrt, asin, degrees, radians, atan, sin
 import numpy as np
 
 class Control(Node):
+
     def __init__(self, name):
         super().__init__(name)
         self.speed = 0
-        self.error_buffer = [0]
-        self.period = 0.04      # the time between updates to the path
+        #self.error_buffer = [0]
+        #self.period = 0.04      # the time between updates to the path
 
         # Declare ROS parameters
         #self.look_ahead = self.declare_parameter("look_ahead", 4.0).value
@@ -22,8 +29,11 @@ class Control(Node):
         #self.K_d = self.declare_parameter("K_d", 1.0).value
         #self.max_lat_acc = self.declare_parameter("max_lat_acc", 5.0).value
         #self.safe_speed = self.declare_parameter("safe_speed", 1.5).value
-        #self.max_speed = self.declare_parameter("max_speed", 4.5).value
+        self.max_speed = self.declare_parameter("max_speed", 3.0).value
         #self.buffer_len = self.declare_parameter("buffer_len", 30).value
+
+        # updated with every callback, to be used when no cones visible
+        self.currentSteeringAngle = 0.0 
 
         # Create subscribers
         self.path_sub = self.create_subscription(WaypointArrayStamped, "/trajectory", self.path_callback, 1)
@@ -31,15 +41,16 @@ class Control(Node):
 
         # Create publishers
         self.comand_pub = self.create_publisher(AckermannDriveStamped, "/cmd", 1)
-        self.viz_pub = self.create_publisher(Marker, "/control/viz", 1)
+        #self.viz_pub = self.create_publisher(Marker, "/control/viz", 1)
+
 
     def state_callback(self, msg):
         self.speed = msg.twist.twist.linear.x
 
+
     def path_callback(self, msg):
         path = self.convert(msg) # If you prefer to use complex numbers specify the optional parameter struct="complex"
-        if len(path) == 0: return
-        print(path)
+
         # Index of the waypoint to the look ahead distance
         look_ahead_index = self.get_look_ahead_index(path)
 
@@ -55,9 +66,16 @@ class Control(Node):
         # Publish commands
         self.pubish_command(acceleration_cmd, steering_cmd)
 
-    def get_look_ahead_index(self, path):
-        return 0
 
+    # chooses which midpoint to aim for
+    def get_look_ahead_index(self, path):
+        # chooses the second midpoint if there is one, if not the first
+        if len(path) > 1:
+            return 1
+        else:
+            return 0
+
+    # calculates steering angle to aim at the given midpoint
     def get_steering(self, path, look_ahead_ind):
         """
         IMPLEMENT YOURSELF
@@ -66,17 +84,32 @@ class Control(Node):
         :param look_ahead_ind:
         :return: steering angle to be sent to the car
         """
-        print(path[look_ahead_ind])
-        distance = sqrt(path[look_ahead_ind][0]**2 + path[look_ahead_ind][1]**2)
-        angle = degrees(asin(abs(path[look_ahead_ind][1]) / distance))
-        if path[look_ahead_ind][1] > 0:
-            angle = -angle
 
-        steering_angle = atan((2*self.L*sin(angle)/distance))
-        print(distance, angle, steering_angle)
+        # if there is a midpoint to aim for calculate new steering angle
+        if len(path) > 0:
+            # distance between car and midpoint
+            distance = sqrt(path[look_ahead_ind][0]**2 + path[look_ahead_ind][1]**2)
+            angle = radians(degrees(asin(abs(path[look_ahead_ind][1]) / distance)))
 
+            # negative steering angles turn right, positive turns left
+            # if midpoint is on the right make angle negative
+            if path[look_ahead_ind][1] < 0:
+                angle = -angle
+
+            steering_angle = atan((2*self.L*sin(angle)/distance))
+            self.currentSteeringAngle = steering_angle
+            #print(distance, angle, steering_angle)
+
+        # if not use the last calculated steering angle
+        else: 
+            # makes assumtion midpoint has been lost because of a sharp turn and
+            # increases the turing angle in the current direction to find cones faster
+            increase_turn = 1.5
+            steering_angle = self.currentSteeringAngle * increase_turn
+       
         return steering_angle
 
+    # right now this just trys to maintain a slow speed and acceleration
     def get_speed_target(self, path, look_ahead_ind):
         """
         IMPLEMENT YOURSELF
@@ -87,8 +120,9 @@ class Control(Node):
         :return: speed we want to reach
         """
 
-        return 1.0
+        return self.max_speed
 
+    # right now this just trys to maintain a slow speed and acceleration
     def get_acceleration(self, speed_target):
         """
         IMPLEMENT YOURSELF
@@ -97,8 +131,11 @@ class Control(Node):
         :param speed_target: speed we want to achieve
         :return: acceleration command to be sent to the car
         """
+        if self.speed >= self.max_speed:
+            return 0.0
+        else:
 
-        return 1.0
+            return 1.0
 
     def pubish_command(self, acceleration, steering):
         msg = AckermannDriveStamped()
